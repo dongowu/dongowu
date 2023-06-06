@@ -1,8 +1,7 @@
 
-
+### Hello, I'm dongowu 👋
 
 <p align="center">
-### Hello, I'm dongowu 👋
 <img align="center" src="https://github.com/smallnest/smallnest/raw/master/developer.gif"/>
 </p>
 <p align= "center">
