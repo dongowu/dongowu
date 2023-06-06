@@ -1,6 +1,6 @@
 ### Hello, I'm dongowu 👋
 <p align="center">
-<img align="center" src="https://github.com/smallnest/smallnest/raw/master/developer.gif"/>
+<img align="center" src="https://github.com/dongowu/dongowu/blob/main/developer.gif"/>
 </p>
 <p align= "center">
 <!-- <img align="left" src="https://github-profile-trophy.vercel.app/?username=dongowu&title=MultipleLang,Star,Follower,Commit,Issue" style="max-width:100%;"> -->
