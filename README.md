@@ -10,3 +10,4 @@
 
 
 
+<a href="https://app.daily.dev/solitude"><img src="https://api.daily.dev/devcards/a7d2e51b28d643c59e678cd700c86a0c.png?r=11z" width="400" alt="jason's Dev Card"/></a>
