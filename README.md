@@ -1,7 +1,5 @@
 ![Header](./github-header-image.png)
 
-I'm a passionate **Backend Developer** specializing in building scalable, high-performance server-side applications. Welcome to my GitHub profile!
-
 ## 🚀 About Me
 
 - 🔭 I’m currently working on **Dream Weaver Sounds**.
