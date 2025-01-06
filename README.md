@@ -1,19 +1,10 @@
+# Hi there, I'm dongowu! 👋
+
+I'm a passionate developer who loves building cool stuff with code. Welcome to my GitHub profile!
 
 
-### Hello, I'm dongowu 👋
-<p align="center">
-  <div>
-<!--     <img src="https://api.daily.dev/devcards/a7d2e51b28d643c59e678cd700c86a0c.png?r=11z" width="400" alt="jason's Dev Card"/> -->
-<img align="left" src="https://github.com/dongowu/dongowu/blob/main/developer.gif"/>
-<!-- <img src="https://api.daily.dev/devcards/a7d2e51b28d643c59e678cd700c86a0c.png?r=aqb" width="400" alt="jason's Dev Card"/>" -->
-  </div>
-  
-</p>
-<p align= "center">
-<!-- <img align="left" src="https://github-profile-trophy.vercel.app/?username=dongowu&title=MultipleLang,Star,Follower,Commit,Issue" style="max-width:100%;"> -->
-<!-- <img align="right" src="https://github-readme-stats.vercel.app/api?username=dongowu&show_icons=true&icon_color=805AD5&text_color=718096&bg_color=ffffff&hide_title=true" /> -->
-</p>
+## 🛠️ My Skills
 
-
-
-
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
