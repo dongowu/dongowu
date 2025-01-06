@@ -50,7 +50,7 @@ Here's a quick overview of my GitHub activity:
 
 Let's connect and chat! You can find me on:
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dongowu@icloud.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=plastic&logo=gmail&logoColor=white)](mailto:dongowu@icloud.com)
 
 ## 🎉 Fun Fact
 
