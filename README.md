@@ -4,12 +4,11 @@ I'm a passionate **Backend Developer** specializing in building scalable, high-p
 
 ## 🚀 About Me
 
-- 🔭 I’m currently working on **[Project Name, e.g., a microservices-based e-commerce platform]**.
-- 🌱 I’m currently learning **[Skill or Technology, e.g., Kubernetes, GraphQL, or Rust]**.
+- 🔭 I’m currently working on **Dream Weaver Sounds**.
+- 🌱 I’m currently learning **react,node.js,Move**.
 - 👯 I’m looking to collaborate on **open-source backend projects** or **API development**.
-- 💬 Ask me about **RESTful APIs, Databases, Cloud Infrastructure, or System Design**.
-- 📫 How to reach me: **[Your Email or Social Media Links]**.
-- ⚡ Fun fact: **[Something Interesting About You, e.g., I once optimized a database query that reduced response time by 90%!]**.
+- 💬 Ask me about **RESTful APIs, Databases, Micro-Service or System Design**.
+- 📫 How to reach me: **dongowu@icloud.com**.
 
 ## 🛠️ Tech Stack
 
