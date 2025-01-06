@@ -3,7 +3,7 @@
 I'm a passionate software developer with a keen interest in building efficient and scalable applications. My journey in the tech world has been an exciting one, filled with continuous learning and growth.
 
 - 🌱 I’m currently learning new technologies and improving my skills in backend development.
-- 💬 Ask me about Python, JavaScript, and cloud computing.
+- 💬 Ask me about Python, JavaScript, and Go computing.
 - 📫 How to reach me: [dongowu@icloud.com](mailto:dongowu@icloud.com)
 - ⚡ Fun fact: I love solving complex algorithms and contributing to open-source projects.
 
