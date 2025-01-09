@@ -38,11 +38,11 @@ Here are some of the technologies I work with:
 
 Here's a quick overview of my GitHub activity:
 
-![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=dongowu&show_icons=true&theme=radical)
+![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=dongowu&show_icons=true&theme=radical&count_private=true)
 
 ## 💻 Most Used Languages
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dongowu&layout=compact&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dongowu&layout=compact&theme=radical&count_private=true)
 
 ## 🌐 Connect with Me
 
