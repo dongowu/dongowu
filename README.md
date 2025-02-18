@@ -34,11 +34,6 @@ Here are some of the technologies I work with:
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=plastic&logo=postman&logoColor=white)
 
-## 📊 GitHub Stats
-
-Here's a quick overview of my GitHub activity:
-
-![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=dongowu&show_icons=true&theme=radical&count_private=true)
 
 ## 💻 Most Used Languages
 
