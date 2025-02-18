@@ -2,7 +2,7 @@
 
 ## 🚀 About Me
 
-- 🔭 I’m currently working on **Dream Weaver Sounds**.
+- 🔭 I’m currently working on **Learning Sui&Move**.
 - 🌱 I’m currently learning **React,TypeScript,Move**.
 - 👯 I’m looking to collaborate on **open-source backend projects** or **API development**.
 - 💬 Ask me about **RESTful APIs, Databases, Micro-Service or System Design**.
