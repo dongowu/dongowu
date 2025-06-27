@@ -1,29 +1,14 @@
-![Header](./github-header-image.png)
-
 # Hi, I'm dongowu 👋
 
-欢迎来到我的 GitHub 主页！这里记录了我的项目、学习和成长。
+欢迎来到我的 GitHub 主页！
 
-## 🗂️ 仓库概览
+## 🧑‍💻 关于我
 
-| 项目名称 | 语言 | 简介 | 主页/演示 | 公开/私有 |
-|---|---|---|---|---|
-| [note](https://github.com/dongowu/note) | JavaScript | 个人笔记项目 | - | 公开 |
-| [AFAC](https://github.com/dongowu/AFAC) | Python | - | - | 公开 |
-| [github2notion](https://github.com/dongowu/github2notion) | Go | - | [Demo](https://github2notion.vercel.app) | 私有 |
-| [github2book](https://github.com/dongowu/github2book) | JavaScript | - | - | 私有 |
-| [JYC](https://github.com/dongowu/JYC) | Go | - | - | 私有 |
-| [JYF](https://github.com/dongowu/JYF) | JavaScript | githu用户登录，进入github仓库管理 | [Demo](https://jyf-production.up.railway.app) | 私有 |
-| [dongowu](https://github.com/dongowu/dongowu) | - | 个人主页项目 | [主页](https://dongowu.vercel.app) | 公开 |
-| [leetcode-practise](https://github.com/dongowu/leetcode-practise) | Rust | - | - | 公开 |
-| [plugin-deep-seek-idea](https://github.com/dongowu/plugin-deep-seek-idea) | Java | - | - | 公开 |
-| [project_rust](https://github.com/dongowu/project_rust) | Rust | - | - | 公开 |
-
-## 🌱 近期活跃
-
-- 最近主要活跃于 `note`、`AFAC`、`github2notion` 等项目。
-- 偶尔写写 Rust，JavaScript，Go 相关内容。
-- 你可以访问主页 [dongowu.vercel.app](https://dongowu.vercel.app) 了解更多。
+- **多语言开发者**：熟练掌握 JavaScript、Go、Python、Rust、Java 等多种编程语言，能胜任多种开发场景。
+- **全栈能力**：具备前端、后端及脚本自动化开发经验，能灵活切换不同技术栈，快速实现产品原型和功能落地。
+- **敏捷学习者**：持续学习新技术，善于将工程化思维应用于实际问题解决，拥有较强的自学与知识迁移能力。
+- **项目实践丰富**：关注效率工具、知识管理、自动化脚本、算法练习等领域，喜欢用代码提升工作与生活效率。
+- **开源热情**：积极参与个人项目和开源实践，乐于总结与分享开发经验。
 
 ## 🧰 技术栈
 
@@ -33,13 +18,13 @@
 - Rust
 - Java
 
-## 📫 联系我
+## 🌱 近期成长
+
+- 持续维护多语言项目，积累跨栈实战能力
+- 探索自动化、AI 相关工具开发
+- 注重代码工程化和开发效率提升
+
+## 📫 联系方式
 
 - GitHub: [dongowu](https://github.com/dongowu)
-
-
-## 🎉 Fun Fact
-
-![GIF](https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif)
-
-I believe in writing clean, efficient, and scalable code to power the backbone of modern applications. Let's build something amazing together!
+---
