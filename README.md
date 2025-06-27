@@ -1,49 +1,42 @@
 ![Header](./github-header-image.png)
 
-## 🚀 About Me
+# Hi, I'm dongowu 👋
 
-- 🔭 I’m currently working on **Learning Sui&Move**.
-- 🌱 I’m currently learning **React,TypeScript,Move**.
-- 👯 I’m looking to collaborate on **open-source backend projects** or **API development**.
-- 💬 Ask me about **RESTful APIs, Databases, Micro-Service or System Design**.
-- 📫 How to reach me: **dongowu@icloud.com**.
+欢迎来到我的 GitHub 主页！这里记录了我的项目、学习和成长。
 
-## 🛠️ Tech Stack
+## 🗂️ 仓库概览
 
-Here are some of the technologies I work with:
+| 项目名称 | 语言 | 简介 | 主页/演示 | 公开/私有 |
+|---|---|---|---|---|
+| [note](https://github.com/dongowu/note) | JavaScript | 个人笔记项目 | - | 公开 |
+| [AFAC](https://github.com/dongowu/AFAC) | Python | - | - | 公开 |
+| [github2notion](https://github.com/dongowu/github2notion) | Go | - | [Demo](https://github2notion.vercel.app) | 私有 |
+| [github2book](https://github.com/dongowu/github2book) | JavaScript | - | - | 私有 |
+| [JYC](https://github.com/dongowu/JYC) | Go | - | - | 私有 |
+| [JYF](https://github.com/dongowu/JYF) | JavaScript | githu用户登录，进入github仓库管理 | [Demo](https://jyf-production.up.railway.app) | 私有 |
+| [dongowu](https://github.com/dongowu/dongowu) | - | 个人主页项目 | [主页](https://dongowu.vercel.app) | 公开 |
+| [leetcode-practise](https://github.com/dongowu/leetcode-practise) | Rust | - | - | 公开 |
+| [plugin-deep-seek-idea](https://github.com/dongowu/plugin-deep-seek-idea) | Java | - | - | 公开 |
+| [project_rust](https://github.com/dongowu/project_rust) | Rust | - | - | 公开 |
 
-### Backend Development
-![Python](https://img.shields.io/badge/Python-3776AB?style=plastic&logo=python&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=plastic&logo=go&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=plastic&logo=node.js&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-007396?style=plastic&logo=Rust&logoColor=white)
+## 🌱 近期活跃
 
-### Databases
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=plastic&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=plastic&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=plastic&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=plastic&logo=redis&logoColor=white)
+- 最近主要活跃于 `note`、`AFAC`、`github2notion` 等项目。
+- 偶尔写写 Rust，JavaScript，Go 相关内容。
+- 你可以访问主页 [dongowu.vercel.app](https://dongowu.vercel.app) 了解更多。
 
-### DevOps & Cloud
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=plastic&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=plastic&logo=kubernetes&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=plastic&logo=nginx&logoColor=white)
+## 🧰 技术栈
 
-### Tools
-![Git](https://img.shields.io/badge/Git-F05032?style=plastic&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=plastic&logo=postman&logoColor=white)
+- JavaScript / TypeScript
+- Go
+- Python
+- Rust
+- Java
 
+## 📫 联系我
 
-## 💻 Most Used Languages
+- GitHub: [dongowu](https://github.com/dongowu)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dongowu&layout=compact&theme=radical&count_private=true)
-
-## 🌐 Connect with Me
-
-Let's connect and chat! You can find me on:
-
-[![Email](https://img.shields.io/badge/Email-D14836?style=plastic&logo=gmail&logoColor=white)](mailto:dongowu@icloud.com)
 
 ## 🎉 Fun Fact
 
