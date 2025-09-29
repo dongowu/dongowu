@@ -71,7 +71,7 @@ Welcome to my GitHub profile! I'm a full-stack developer passionate about progra
 
 ## 📈 Activity
 
-![Contribution Graph](https://github-profile-3d-contrib.vercel.app/api?username=dongowu&theme=dark)
+![3D Contribution Graph](https://github-profile-3d-contrib.vercel.app/api?username=dongowu&theme=dark)
 
 ---
 
