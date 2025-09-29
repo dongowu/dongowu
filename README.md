@@ -46,34 +46,6 @@ Welcome to my GitHub profile! I'm a full-stack developer passionate about progra
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dongowu&layout=compact&langs_count=7&theme=radical"/>
 </div>
 
-## 🦀 Rust Projects
-
-<div align="center">
-  <a href="https://github.com/dongowu/rust-project1">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=dongowu&repo=rust-project1&theme=radical" />
-  </a>
-  <a href="https://github.com/dongowu/rust-project2">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=dongowu&repo=rust-project2&theme=radical" />
-  </a>
-</div>
-
-### Open Source Contributions
-<!-- This section is automatically updated by GitHub Actions based on your PRs -->
-- **[rust-lang/rust](https://github.com/rust-lang/rust)**: Contributing documentation improvements and minor bug fixes
-- **[tokio-rs/tokio](https://github.com/tokio-rs/tokio)**: Helping with async runtime optimizations
-- **[rust-analyzer/rust-analyzer](https://github.com/rust-analyzer/rust-analyzer)**: Improving IDE support for Rust
-
-## 🏆 Other Featured Projects
-
-<div align="center">
-  <a href="https://github.com/dongowu/project1">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=dongowu&repo=project1&theme=radical" />
-  </a>
-  <a href="https://github.com/dongowu/project2">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=dongowu&repo=project2&theme=radical" />
-  </a>
-</div>
-
 ## 🌱 Recent Growth
 
 ### 🦀 Rust Focus
