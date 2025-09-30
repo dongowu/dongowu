@@ -5,6 +5,9 @@ on:
     - cron: '0 0 * * 0'  # Run weekly on Sunday at midnight
   workflow_dispatch:  # Allow manual trigger
 
+permissions:
+  contents: write # 添加写入权限
+
 jobs:
   generate-graph:
     runs-on: ubuntu-latest
