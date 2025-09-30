@@ -1,0 +1,37 @@
+name: Generate PR Contribution Graph
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Run weekly on Sunday at midnight
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  generate-graph:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          
+      - name: Run SVG graph generator script
+        run: node generate-pr-graph.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Run interactive HTML graph generator script
+        run: node generate-interactive-pr-graph.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add pr-contribution-graph.svg pr-contribution-graph.html pr-contribution-data.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update PR contribution graphs"
+          git push

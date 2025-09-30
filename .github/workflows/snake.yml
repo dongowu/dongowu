@@ -1,35 +1,41 @@
-name: Generate Snake Contribution
+name: Generate Snake
 
 on:
+  # 每天运行一次
   schedule:
-    - cron: "0 0 * * *"  # 每天运行
-  workflow_dispatch:     # 允许手动触发
+    - cron: "0 12 * * *"
+  
+  # 允许手动触发
+  workflow_dispatch:
+
+  # 每次推送到main分支时运行
+  push:
+    branches:
+    - main
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write    # 必须添加写入权限
+    timeout-minutes: 10
     
     steps:
-      - name: Checkout repository
+      # 检出代码
+      - name: Checkout
         uses: actions/checkout@v3
-        with:
-          ref: main      # 或你的默认分支名
-        
+
+      # 生成贡献蛇动画
       - name: Generate Snake
-        uses: Platane/snk@v3
+        uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_user_name: dongowu
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-          
-      - name: Commit and push
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add dist
-          git commit -m "Update snake contribution graph"
-          git push
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # 推送生成的文件到仓库
+      - name: Push to GitHub
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: 'dist'
+          message: 'Update snake animations'
+          default_author: github_actions

@@ -1,6 +1,9 @@
+<div align="center">
+  <img src="./github-header-image.png" alt="Header" width="100%"/>
+</div>
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+I'm+dongowu!;Backend-Developer!;Rust+Enthusiast!;" />
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+I'm+dongowu!;Full-Stack+Developer!;Rust+Enthusiast!;" />
 </h1>
 
 <div align="center">
@@ -15,6 +18,8 @@
 
 ## 🚀 About Me
 
+<img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif">
+
 ```rust
 struct Developer {
     name: String,
@@ -28,7 +33,7 @@ impl Developer {
     fn new() -> Self {
         Developer {
             name: "dongowu".to_string(),
-            role: "Backend Developer".to_string(),
+            role: "Full-Stack Developer".to_string(),
             languages: vec![
                 "Rust".to_string(),
                 "Go".to_string(), 
@@ -92,6 +97,8 @@ impl Developer {
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=dongowu&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
 </div>
 
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=dongowu&theme=tokyo-night&hide_border=true&area=true" alt="Activity Graph"/>
 </div>
 
 ## 🏆 GitHub Trophies
@@ -126,31 +133,29 @@ Other        40 mins         ░░░░░░░░░░░░░░░░░
 
 ## 🌟 Featured Projects
 
-<!-- <div align="center">
+<div align="center">
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=dongowu&repo=your-rust-project&theme=tokyonight&hide_border=true)](https://github.com/dongowu/your-rust-project)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=dongowu&repo=your-go-project&theme=tokyonight&hide_border=true)](https://github.com/dongowu/your-go-project)
 
-</div> -->
+</div>
 
 ## 🤝 Let's Connect
 
 <div align="center">
   
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dongowu)
-[![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jason_w96@163.com)
-[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/dongowu1)
+[![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourusername)
+[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/yourusername)
+[![Discord](https://img.shields.io/badge/-Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/yourinvite)
 
 </div>
 
 ## 🐍 Contribution Snake
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dongowu/dongowu/main/dist/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dongowu/dongowu/main/dist/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/dongowu/dongowu/main/dist/github-contribution-grid-snake.svg">
-  </picture>
+  <img src="https://raw.githubusercontent.com/dongowu/dongowu/main/profile-snake.svg" alt="Snake animation" />
 </div>
 
 ## 💭 Random Dev Quote
