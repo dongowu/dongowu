@@ -1,0 +1,193 @@
+<svg width="800" height="300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bar { fill: #8250df; }
+    .bar:hover { fill: #a371f7; }
+    .axis { stroke: #d0d7de; stroke-width: 1; }
+    .label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 12px; fill: #57606a; }
+    .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #24292f; }
+    .tooltip { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 12px; }
+    .repo-item { font-size: 10px; }
+  </style>
+  
+  <title>PR Contribution Graph for dongowu</title>
+  
+  <!-- Background -->
+  <rect width="800" height="300" fill="#ffffff" />
+  
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" class="title">PR Contributions (Last 12 Months)</text>
+  
+  <!-- X-axis -->
+  <line x1="50" y1="250" x2="750" y2="250" class="axis" />
+  
+  <!-- Y-axis -->
+  <line x1="50" y1="50" x2="50" y2="250" class="axis" />
+  
+  <!-- Bars -->
+  
+    <g>
+      <rect x="50" y="250" width="56.333333333333336" height="0" class="bar">
+        <title>
+          0 PRs
+          
+        </title>
+      </rect>
+      <text x="78.16666666666667" y="245" text-anchor="middle" class="label">0</text>
+    </g>
+  
+    <g>
+      <rect x="108.33333333333334" y="250" width="56.333333333333336" height="0" class="bar">
+        <title>
+          0 PRs
+          
+        </title>
+      </rect>
+      <text x="136.5" y="245" text-anchor="middle" class="label">0</text>
+    </g>
+  
+    <g>
+      <rect x="166.66666666666669" y="234.6153846153846" width="56.333333333333336" height="15.384615384615385" class="bar">
+        <title>
+          1 PRs
+          
+            &#10;xen0n/go-workwx: 1 PR
+        </title>
+      </rect>
+      <text x="194.83333333333334" y="229.6153846153846" text-anchor="middle" class="label">1</text>
+    </g>
+  
+    <g>
+      <rect x="225" y="234.6153846153846" width="56.333333333333336" height="15.384615384615385" class="bar">
+        <title>
+          1 PRs
+          
+            &#10;move-cn/letsmove: 1 PR
+        </title>
+      </rect>
+      <text x="253.16666666666666" y="229.6153846153846" text-anchor="middle" class="label">1</text>
+    </g>
+  
+    <g>
+      <rect x="283.33333333333337" y="250" width="56.333333333333336" height="0" class="bar">
+        <title>
+          0 PRs
+          
+        </title>
+      </rect>
+      <text x="311.50000000000006" y="245" text-anchor="middle" class="label">0</text>
+    </g>
+  
+    <g>
+      <rect x="341.6666666666667" y="250" width="56.333333333333336" height="0" class="bar">
+        <title>
+          0 PRs
+          
+        </title>
+      </rect>
+      <text x="369.83333333333337" y="245" text-anchor="middle" class="label">0</text>
+    </g>
+  
+    <g>
+      <rect x="400" y="219.23076923076923" width="56.333333333333336" height="30.76923076923077" class="bar">
+        <title>
+          2 PRs
+          
+            &#10;Lab-JY/new-milli: 2 PRs
+        </title>
+      </rect>
+      <text x="428.1666666666667" y="214.23076923076923" text-anchor="middle" class="label">2</text>
+    </g>
+  
+    <g>
+      <rect x="458.33333333333337" y="234.6153846153846" width="56.333333333333336" height="15.384615384615385" class="bar">
+        <title>
+          1 PRs
+          
+            &#10;dongowu/dongowu: 1 PR
+        </title>
+      </rect>
+      <text x="486.50000000000006" y="229.6153846153846" text-anchor="middle" class="label">1</text>
+    </g>
+  
+    <g>
+      <rect x="516.6666666666667" y="250" width="56.333333333333336" height="0" class="bar">
+        <title>
+          0 PRs
+          
+        </title>
+      </rect>
+      <text x="544.8333333333334" y="245" text-anchor="middle" class="label">0</text>
+    </g>
+  
+    <g>
+      <rect x="575" y="50" width="56.333333333333336" height="200" class="bar">
+        <title>
+          13 PRs
+          
+            &#10;MystenLabs/suiup: 6 PRs
+            &#10;hoh-zone/SuiMacMini: 2 PRs
+            &#10;MystenLabs/sui: 1 PR
+        </title>
+      </rect>
+      <text x="603.1666666666666" y="45" text-anchor="middle" class="label">13</text>
+    </g>
+  
+    <g>
+      <rect x="633.3333333333334" y="142.30769230769232" width="56.333333333333336" height="107.6923076923077" class="bar">
+        <title>
+          7 PRs
+          
+            &#10;MystenLabs/sui: 3 PRs
+            &#10;volo-rs/volo-loadbalance: 2 PRs
+            &#10;hoh-zone/SuiMacMini: 1 PR
+        </title>
+      </rect>
+      <text x="661.5" y="137.30769230769232" text-anchor="middle" class="label">7</text>
+    </g>
+  
+    <g>
+      <rect x="691.6666666666667" y="250" width="56.333333333333336" height="0" class="bar">
+        <title>
+          0 PRs
+          
+        </title>
+      </rect>
+      <text x="719.8333333333334" y="245" text-anchor="middle" class="label">0</text>
+    </g>
+  
+  
+  <!-- X-axis labels -->
+  
+    <text x="79.16666666666667" y="270" text-anchor="middle" class="label" transform="rotate(45 79.16666666666667 270)">Nov 2024</text>
+  
+    <text x="137.5" y="270" text-anchor="middle" class="label" transform="rotate(45 137.5 270)">Dec 2024</text>
+  
+    <text x="195.83333333333334" y="270" text-anchor="middle" class="label" transform="rotate(45 195.83333333333334 270)">Jan 2025</text>
+  
+    <text x="254.16666666666666" y="270" text-anchor="middle" class="label" transform="rotate(45 254.16666666666666 270)">Feb 2025</text>
+  
+    <text x="312.50000000000006" y="270" text-anchor="middle" class="label" transform="rotate(45 312.50000000000006 270)">Mar 2025</text>
+  
+    <text x="370.83333333333337" y="270" text-anchor="middle" class="label" transform="rotate(45 370.83333333333337 270)">Apr 2025</text>
+  
+    <text x="429.1666666666667" y="270" text-anchor="middle" class="label" transform="rotate(45 429.1666666666667 270)">May 2025</text>
+  
+    <text x="487.50000000000006" y="270" text-anchor="middle" class="label" transform="rotate(45 487.50000000000006 270)">Jun 2025</text>
+  
+    <text x="545.8333333333334" y="270" text-anchor="middle" class="label" transform="rotate(45 545.8333333333334 270)">Jul 2025</text>
+  
+    <text x="604.1666666666666" y="270" text-anchor="middle" class="label" transform="rotate(45 604.1666666666666 270)">Aug 2025</text>
+  
+    <text x="662.5" y="270" text-anchor="middle" class="label" transform="rotate(45 662.5 270)">Sep 2025</text>
+  
+    <text x="720.8333333333334" y="270" text-anchor="middle" class="label" transform="rotate(45 720.8333333333334 270)">Oct 2025</text>
+  
+  
+  <!-- Y-axis labels -->
+  <text x="40" y="250" text-anchor="end" class="label">0</text>
+  <text x="40" y="50" text-anchor="end" class="label">13</text>
+  <text x="40" y="150" text-anchor="end" class="label">6</text>
+  
+  <!-- Watermark -->
+  <text x="750" y="290" text-anchor="end" class="label" opacity="0.5">Generated on 2025-10-05</text>
+</svg>
