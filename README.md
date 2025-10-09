@@ -163,7 +163,7 @@ Other        40 mins         ░░░░░░░░░░░░░░░░░
 
 <div align="center">
   <h3>🎵 Currently Vibing To</h3>
- ![Alt text](https://spotify-recently-played-readme.vercel.app/api?user=31nr5zr6eh7atnjrwpxonahlyfhm)
+  <img src="https://spotify-recently-played-readme.vercel.app/api?user=31nr5zr6eh7atnjrwpxonahlyfhm" />
 </div>
 
 <div align="center">
