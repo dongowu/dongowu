@@ -146,13 +146,14 @@
     </g>
   
     <g>
-      <rect x="691.6666666666667" y="250" width="56.333333333333336" height="0" class="bar">
+      <rect x="691.6666666666667" y="219.23076923076923" width="56.333333333333336" height="30.76923076923077" class="bar">
         <title>
-          0 PRs
+          2 PRs
           
+            &#10;block-vision/sui-go-sdk: 2 PRs
         </title>
       </rect>
-      <text x="719.8333333333334" y="245" text-anchor="middle" class="label">0</text>
+      <text x="719.8333333333334" y="214.23076923076923" text-anchor="middle" class="label">2</text>
     </g>
   
   
@@ -189,5 +190,5 @@
   <text x="40" y="150" text-anchor="end" class="label">6</text>
   
   <!-- Watermark -->
-  <text x="750" y="290" text-anchor="end" class="label" opacity="0.5">Generated on 2025-10-05</text>
+  <text x="750" y="290" text-anchor="end" class="label" opacity="0.5">Generated on 2025-10-12</text>
 </svg>

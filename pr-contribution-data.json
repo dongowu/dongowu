@@ -257,8 +257,25 @@
     ]
   },
   "2025-10": {
-    "count": 0,
-    "repositories": {},
-    "prs": []
+    "count": 2,
+    "repositories": {
+      "block-vision/sui-go-sdk": 2
+    },
+    "prs": [
+      {
+        "title": "initialize validator",
+        "url": "https://github.com/block-vision/sui-go-sdk/pull/77",
+        "repo": "block-vision/sui-go-sdk",
+        "created_at": "2025-10-09T09:05:36Z",
+        "state": "open"
+      },
+      {
+        "title": "delete unused code",
+        "url": "https://github.com/block-vision/sui-go-sdk/pull/76",
+        "repo": "block-vision/sui-go-sdk",
+        "created_at": "2025-10-09T09:05:18Z",
+        "state": "open"
+      }
+    ]
   }
 }
