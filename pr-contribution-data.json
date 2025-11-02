@@ -1,9 +1,4 @@
 {
-  "2024-11": {
-    "count": 0,
-    "repositories": {},
-    "prs": []
-  },
   "2024-12": {
     "count": 0,
     "repositories": {},
@@ -301,5 +296,10 @@
         "state": "open"
       }
     ]
+  },
+  "2025-11": {
+    "count": 0,
+    "repositories": {},
+    "prs": []
   }
 }
