@@ -1,23 +1,26 @@
 name: Generate Snake
 
+permissions:
+  contents: write
+
 on:
   # 每天运行一次
   schedule:
     - cron: "0 12 * * *"
-  
+
   # 允许手动触发
   workflow_dispatch:
 
   # 每次推送到main分支时运行
   push:
     branches:
-    - main
+      - main
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    
+
     steps:
       # 检出代码
       - name: Checkout
