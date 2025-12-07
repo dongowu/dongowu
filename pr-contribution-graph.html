@@ -123,11 +123,11 @@
     <div class="stats">
       <div class="stat-card">
         <h3>Total PRs</h3>
-        <div class="stat-value">30</div>
+        <div class="stat-value">33</div>
       </div>
       <div class="stat-card">
         <h3>Active Repositories</h3>
-        <div class="stat-value">13</div>
+        <div class="stat-value">14</div>
       </div>
       <div class="stat-card">
         <h3>Most Active Month</h3>
@@ -145,13 +145,18 @@
     <div class="repo-list">
       
           <div class="repo-item">
+            <span>MystenLabs/sui</span>
+            <span>6 PRs</span>
+          </div>
+        
+          <div class="repo-item">
             <span>MystenLabs/suiup</span>
             <span>6 PRs</span>
           </div>
         
           <div class="repo-item">
-            <span>MystenLabs/sui</span>
-            <span>5 PRs</span>
+            <span>volo-rs/volo-loadbalance</span>
+            <span>4 PRs</span>
           </div>
         
           <div class="repo-item">
@@ -164,11 +169,6 @@
             <span>3 PRs</span>
           </div>
         
-          <div class="repo-item">
-            <span>volo-rs/volo-loadbalance</span>
-            <span>3 PRs</span>
-          </div>
-        
     </div>
     
     <div class="pr-list">
@@ -176,15 +176,11 @@
       <div class="month-selector">
         <label for="month-select">Select Month: </label>
         <select id="month-select">
-          <option value="2024-12">Dec 2024 (0 PRs)</option><option value="2025-01">Jan 2025 (1 PRs)</option><option value="2025-02">Feb 2025 (1 PRs)</option><option value="2025-03">Mar 2025 (0 PRs)</option><option value="2025-04">Apr 2025 (0 PRs)</option><option value="2025-05">May 2025 (2 PRs)</option><option value="2025-06">Jun 2025 (1 PRs)</option><option value="2025-07">Jul 2025 (0 PRs)</option><option value="2025-08">Aug 2025 (13 PRs)</option><option value="2025-09">Sep 2025 (7 PRs)</option><option value="2025-10">Oct 2025 (5 PRs)</option><option value="2025-11">Nov 2025 (0 PRs)</option>
+          <option value="2025-01">Jan 2025 (1 PRs)</option><option value="2025-02">Feb 2025 (1 PRs)</option><option value="2025-03">Mar 2025 (0 PRs)</option><option value="2025-04">Apr 2025 (0 PRs)</option><option value="2025-05">May 2025 (2 PRs)</option><option value="2025-06">Jun 2025 (1 PRs)</option><option value="2025-07">Jul 2025 (0 PRs)</option><option value="2025-08">Aug 2025 (13 PRs)</option><option value="2025-09">Sep 2025 (7 PRs)</option><option value="2025-10">Oct 2025 (5 PRs)</option><option value="2025-11">Nov 2025 (0 PRs)</option><option value="2025-12">Dec 2025 (3 PRs)</option>
         </select>
       </div>
       
       
-          <div id="pr-list-2024-12" class="month-prs" style="display: none;">
-            <p>No PRs in this month</p>
-          </div>
-        
           <div id="pr-list-2025-01" class="month-prs" style="display: none;">
             
                   <div class="pr-item">
@@ -365,7 +361,7 @@
                     <div class="pr-meta">
                       Repository: <strong>MystenLabs/suiup</strong> | 
                       Created: 8/9/2025 | 
-                      Status: <span class="open">open</span>
+                      Status: <span class="closed">closed</span>
                     </div>
                   </div>
                 
@@ -559,10 +555,47 @@
             <p>No PRs in this month</p>
           </div>
         
+          <div id="pr-list-2025-12" class="month-prs" style="display: none;">
+            
+                  <div class="pr-item">
+                    <div class="pr-title">
+                      <a href="https://github.com/MystenLabs/walrus/pull/2749" class="pr-link" target="_blank">Replace duplicated version matching logic in record_network_protocol_…</a>
+                    </div>
+                    <div class="pr-meta">
+                      Repository: <strong>MystenLabs/walrus</strong> | 
+                      Created: 12/4/2025 | 
+                      Status: <span class="open">open</span>
+                    </div>
+                  </div>
+                
+                  <div class="pr-item">
+                    <div class="pr-title">
+                      <a href="https://github.com/volo-rs/volo-loadbalance/pull/4" class="pr-link" target="_blank">Devloadbalance</a>
+                    </div>
+                    <div class="pr-meta">
+                      Repository: <strong>volo-rs/volo-loadbalance</strong> | 
+                      Created: 12/1/2025 | 
+                      Status: <span class="closed">closed</span>
+                    </div>
+                  </div>
+                
+                  <div class="pr-item">
+                    <div class="pr-title">
+                      <a href="https://github.com/MystenLabs/sui/pull/24472" class="pr-link" target="_blank">perf(types):Reduce allocations in `inut_objects` funcation</a>
+                    </div>
+                    <div class="pr-meta">
+                      Repository: <strong>MystenLabs/sui</strong> | 
+                      Created: 12/1/2025 | 
+                      Status: <span class="open">open</span>
+                    </div>
+                  </div>
+                
+          </div>
+        
     </div>
     
     <div class="footer">
-      Generated on 11/30/2025 | Data from GitHub API
+      Generated on 12/7/2025 | Data from GitHub API
     </div>
   </div>
   
@@ -572,42 +605,42 @@
     const prChart = new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ["Dec 2024","Jan 2025","Feb 2025","Mar 2025","Apr 2025","May 2025","Jun 2025","Jul 2025","Aug 2025","Sep 2025","Oct 2025","Nov 2025"],
+        labels: ["Jan 2025","Feb 2025","Mar 2025","Apr 2025","May 2025","Jun 2025","Jul 2025","Aug 2025","Sep 2025","Oct 2025","Nov 2025","Dec 2025"],
         datasets: [
           {
             label: 'Total PRs',
-            data: [0,1,1,0,0,2,1,0,13,7,5,0],
+            data: [1,1,0,0,2,1,0,13,7,5,0,3],
             backgroundColor: 'rgba(130, 80, 223, 0.7)',
             borderColor: 'rgba(130, 80, 223, 1)',
             borderWidth: 1
           },
           {
-              label: 'MystenLabs/suiup',
-              data: [0,0,0,0,0,0,0,0,6,0,0,0],
+              label: 'MystenLabs/sui',
+              data: [0,0,0,0,0,0,0,1,3,1,0,1],
               backgroundColor: 'rgba(255, 99, 132, 0.5)',
               borderColor: 'rgba(255, 99, 132, 1)',
               borderWidth: 1
             },{
-              label: 'MystenLabs/sui',
-              data: [0,0,0,0,0,0,0,0,1,3,1,0],
+              label: 'MystenLabs/suiup',
+              data: [0,0,0,0,0,0,0,6,0,0,0,0],
               backgroundColor: 'rgba(54, 162, 235, 0.5)',
               borderColor: 'rgba(54, 162, 235, 1)',
               borderWidth: 1
             },{
-              label: 'hoh-zone/SuiMacMini',
-              data: [0,0,0,0,0,0,0,0,2,1,0,0],
+              label: 'volo-rs/volo-loadbalance',
+              data: [0,0,0,0,0,0,0,0,2,1,0,1],
               backgroundColor: 'rgba(255, 206, 86, 0.5)',
               borderColor: 'rgba(255, 206, 86, 1)',
               borderWidth: 1
             },{
-              label: 'block-vision/sui-go-sdk',
-              data: [0,0,0,0,0,0,0,0,1,0,2,0],
+              label: 'hoh-zone/SuiMacMini',
+              data: [0,0,0,0,0,0,0,2,1,0,0,0],
               backgroundColor: 'rgba(75, 192, 192, 0.5)',
               borderColor: 'rgba(75, 192, 192, 1)',
               borderWidth: 1
             },{
-              label: 'volo-rs/volo-loadbalance',
-              data: [0,0,0,0,0,0,0,0,0,2,1,0],
+              label: 'block-vision/sui-go-sdk',
+              data: [0,0,0,0,0,0,0,1,0,2,0,0],
               backgroundColor: 'rgba(153, 102, 255, 0.5)',
               borderColor: 'rgba(153, 102, 255, 1)',
               borderWidth: 1

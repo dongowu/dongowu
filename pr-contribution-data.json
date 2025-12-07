@@ -1,9 +1,4 @@
 {
-  "2024-12": {
-    "count": 0,
-    "repositories": {},
-    "prs": []
-  },
   "2025-01": {
     "count": 1,
     "repositories": {
@@ -159,7 +154,7 @@
         "url": "https://github.com/MystenLabs/suiup/pull/100",
         "repo": "MystenLabs/suiup",
         "created_at": "2025-08-09T15:20:57Z",
-        "state": "open"
+        "state": "closed"
       },
       {
         "title": "feat(config): Complete config management implementation",
@@ -301,5 +296,36 @@
     "count": 0,
     "repositories": {},
     "prs": []
+  },
+  "2025-12": {
+    "count": 3,
+    "repositories": {
+      "MystenLabs/walrus": 1,
+      "volo-rs/volo-loadbalance": 1,
+      "MystenLabs/sui": 1
+    },
+    "prs": [
+      {
+        "title": "Replace duplicated version matching logic in record_network_protocol_…",
+        "url": "https://github.com/MystenLabs/walrus/pull/2749",
+        "repo": "MystenLabs/walrus",
+        "created_at": "2025-12-04T10:40:12Z",
+        "state": "open"
+      },
+      {
+        "title": "Devloadbalance",
+        "url": "https://github.com/volo-rs/volo-loadbalance/pull/4",
+        "repo": "volo-rs/volo-loadbalance",
+        "created_at": "2025-12-01T09:55:11Z",
+        "state": "closed"
+      },
+      {
+        "title": "perf(types):Reduce allocations in `inut_objects` funcation",
+        "url": "https://github.com/MystenLabs/sui/pull/24472",
+        "repo": "MystenLabs/sui",
+        "created_at": "2025-12-01T05:08:27Z",
+        "state": "open"
+      }
+    ]
   }
 }
