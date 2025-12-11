@@ -1,20 +1,40 @@
-name: Waka Readme
+name: Waka Readme Stats
 
 on:
   schedule:
-    # 每天 UTC 时间 0:00 运行 (北京时间 8:00)
     - cron: '0 0 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-readme:
-    name: Update Readme with Metrics
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: anmol098/waka-readme-stats@master
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Set up environment
+        run: |
+          # 创建临时文件来传递 token
+          echo "GITHUB_TOKEN=${{ github.token }}" >> $GITHUB_ENV
+          echo "INPUT_GH_TOKEN=${{ github.token }}" >> $GITHUB_ENV
+          
+      - name: Run WakaTime stats
+        # 使用 fork 版本，有些 fork 版本支持 GITHUB_TOKEN
+        uses: anmol098/waka-readme-stats@master
+        env:
+          # 尝试通过环境变量传递
+          GH_TOKEN: ${{ github.token }}
+          INPUT_GH_TOKEN: ${{ github.token }}
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          # 尝试两种方式
+          GH_TOKEN: ${{ github.token }}  # 直接传递
+          
+          # 显示配置
           SHOW_LINES_OF_CODE: "True"
           SHOW_PROFILE_VIEWS: "False"
           SHOW_COMMIT: "True"
@@ -29,3 +49,6 @@ jobs:
           SHOW_LOC_CHART: "False"
           SHOW_UPDATED_DATE: "True"
           SHOW_TOTAL_CODE_TIME: "True"
+          SECTION_NAME: "waka"
+          COMMIT_MESSAGE: "📈 更新 WakaTime 统计"
+          LOCALE: "zh"
