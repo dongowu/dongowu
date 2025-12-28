@@ -298,13 +298,27 @@
     "prs": []
   },
   "2025-12": {
-    "count": 4,
+    "count": 6,
     "repositories": {
-      "MystenLabs/sui": 2,
+      "MystenLabs/sui": 4,
       "MystenLabs/walrus": 1,
       "volo-rs/volo-loadbalance": 1
     },
     "prs": [
+      {
+        "title": "fix permanent",
+        "url": "https://github.com/MystenLabs/sui/pull/24728",
+        "repo": "MystenLabs/sui",
+        "created_at": "2025-12-22T22:55:06Z",
+        "state": "open"
+      },
+      {
+        "title": "refactor: replace Into with From for DiagnosticInfo conversion",
+        "url": "https://github.com/MystenLabs/sui/pull/24727",
+        "repo": "MystenLabs/sui",
+        "created_at": "2025-12-22T22:11:30Z",
+        "state": "closed"
+      },
       {
         "title": "Perf: reuse fullnode HttpClient and remove redundant HeaderMap clones",
         "url": "https://github.com/MystenLabs/sui/pull/24678",

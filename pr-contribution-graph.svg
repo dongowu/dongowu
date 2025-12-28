@@ -149,16 +149,16 @@
     </g>
   
     <g>
-      <rect x="691.6666666666667" y="188.46153846153845" width="56.333333333333336" height="61.53846153846154" class="bar">
+      <rect x="691.6666666666667" y="157.69230769230768" width="56.333333333333336" height="92.3076923076923" class="bar">
         <title>
-          4 PRs
+          6 PRs
           
-            &#10;MystenLabs/sui: 2 PRs
+            &#10;MystenLabs/sui: 4 PRs
             &#10;MystenLabs/walrus: 1 PR
             &#10;volo-rs/volo-loadbalance: 1 PR
         </title>
       </rect>
-      <text x="719.8333333333334" y="183.46153846153845" text-anchor="middle" class="label">4</text>
+      <text x="719.8333333333334" y="152.69230769230768" text-anchor="middle" class="label">6</text>
     </g>
   
   
@@ -195,5 +195,5 @@
   <text x="40" y="150" text-anchor="end" class="label">6</text>
   
   <!-- Watermark -->
-  <text x="750" y="290" text-anchor="end" class="label" opacity="0.5">Generated on 2025-12-21</text>
+  <text x="750" y="290" text-anchor="end" class="label" opacity="0.5">Generated on 2025-12-28</text>
 </svg>
