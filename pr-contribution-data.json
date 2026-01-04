@@ -1,19 +1,4 @@
 {
-  "2025-01": {
-    "count": 1,
-    "repositories": {
-      "xen0n/go-workwx": 1
-    },
-    "prs": [
-      {
-        "title": "feat: 实现机器人发送多种格式的消息",
-        "url": "https://github.com/xen0n/go-workwx/pull/212",
-        "repo": "xen0n/go-workwx",
-        "created_at": "2025-01-09T05:15:36Z",
-        "state": "closed"
-      }
-    ]
-  },
   "2025-02": {
     "count": 1,
     "repositories": {
@@ -348,5 +333,10 @@
         "state": "closed"
       }
     ]
+  },
+  "2026-01": {
+    "count": 0,
+    "repositories": {},
+    "prs": []
   }
 }
