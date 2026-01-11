@@ -199,7 +199,7 @@
         "url": "https://github.com/hoh-zone/SuiMacMini/pull/29",
         "repo": "hoh-zone/SuiMacMini",
         "created_at": "2025-09-29T11:07:52Z",
-        "state": "open"
+        "state": "closed"
       },
       {
         "title": "Devloadbalance",
@@ -295,7 +295,7 @@
         "url": "https://github.com/MystenLabs/sui/pull/24728",
         "repo": "MystenLabs/sui",
         "created_at": "2025-12-22T22:55:06Z",
-        "state": "open"
+        "state": "closed"
       },
       {
         "title": "refactor: replace Into with From for DiagnosticInfo conversion",
@@ -335,8 +335,18 @@
     ]
   },
   "2026-01": {
-    "count": 0,
-    "repositories": {},
-    "prs": []
+    "count": 1,
+    "repositories": {
+      "MystenLabs/deepbookv3": 1
+    },
+    "prs": [
+      {
+        "title": "perf(server): reuse SuiClient across requests",
+        "url": "https://github.com/MystenLabs/deepbookv3/pull/764",
+        "repo": "MystenLabs/deepbookv3",
+        "created_at": "2026-01-06T17:07:15Z",
+        "state": "open"
+      }
+    ]
   }
 }

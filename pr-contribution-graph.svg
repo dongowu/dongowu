@@ -151,13 +151,14 @@
     </g>
   
     <g>
-      <rect x="691.6666666666667" y="250" width="56.333333333333336" height="0" class="bar">
+      <rect x="691.6666666666667" y="234.6153846153846" width="56.333333333333336" height="15.384615384615385" class="bar">
         <title>
-          0 PRs
+          1 PRs
           
+            &#10;MystenLabs/deepbookv3: 1 PR
         </title>
       </rect>
-      <text x="719.8333333333334" y="245" text-anchor="middle" class="label">0</text>
+      <text x="719.8333333333334" y="229.6153846153846" text-anchor="middle" class="label">1</text>
     </g>
   
   
@@ -194,5 +195,5 @@
   <text x="40" y="150" text-anchor="end" class="label">6</text>
   
   <!-- Watermark -->
-  <text x="750" y="290" text-anchor="end" class="label" opacity="0.5">Generated on 2026-01-04</text>
+  <text x="750" y="290" text-anchor="end" class="label" opacity="0.5">Generated on 2026-01-11</text>
 </svg>
