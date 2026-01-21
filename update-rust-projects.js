@@ -1,8 +1,8 @@
 /**
- * GitHub PR Fetcher for Rust Projects
+ * GitHub PR Fetcher for Rust & Go Projects
  * 
  * This script fetches PRs from a GitHub user and updates the README.md file
- * with information about Rust-related contributions.
+ * with information about Rust and Go related contributions.
  */
 
 const https = require('https');
@@ -25,7 +25,8 @@ function fetchUserPRs(username) {
   return new Promise((resolve, reject) => {
     const options = {
       hostname: 'api.github.com',
-      path: `/search/issues?q=author:${username}+type:pr+is:public`,
+      // Remove is:public to allow searching private PRs if the token has permissions
+      path: `/search/issues?q=author:${username}+type:pr`,
       method: 'GET',
       headers: {
         'User-Agent': 'PR-Fetcher-Script',
@@ -63,42 +64,50 @@ function fetchUserPRs(username) {
 }
 
 /**
- * Filters PRs to find Rust-related contributions
+ * Filters PRs to find Rust and Go related contributions
  * @param {Array} prs - Array of PR objects
- * @returns {Array} - Filtered array of Rust-related PRs
+ * @returns {Array} - Filtered array of Rust/Go-related PRs
  */
-function filterRustPRs(prs) {
+function filterRelevantPRs(prs) {
   return prs.filter(pr => {
-    // Check if PR is related to Rust based on repository name or labels
-    const isRustRepo = pr.repository_url && 
-      (pr.repository_url.toLowerCase().includes('rust') || 
-       pr.repository_url.toLowerCase().includes('cargo'));
+    // Helper for checking string existence
+    const contains = (str, keywords) => {
+      if (!str) return false;
+      const lower = str.toLowerCase();
+      return keywords.some(k => lower.includes(k));
+    };
+
+    const rustKeywords = ['rust', 'cargo', 'crate'];
+    const goKeywords = ['go', 'golang', 'goroutine'];
+    const allKeywords = [...rustKeywords, ...goKeywords];
+
+    // Check repository name/url
+    const isRelevantRepo = contains(pr.repository_url, allKeywords);
     
-    // Check labels if available
-    const hasRustLabel = pr.labels && 
-      pr.labels.some(label => 
-        label.name.toLowerCase().includes('rust') || 
-        label.name.toLowerCase().includes('cargo'));
+    // Check labels
+    const hasRelevantLabel = pr.labels && pr.labels.some(label => 
+      contains(label.name, allKeywords)
+    );
     
-    // Check title and body for Rust mentions
-    const titleHasRust = pr.title.toLowerCase().includes('rust');
-    const bodyHasRust = pr.body && pr.body.toLowerCase().includes('rust');
+    // Check title and body
+    const titleRelevant = contains(pr.title, allKeywords);
+    const bodyRelevant = contains(pr.body, allKeywords);
     
-    return isRustRepo || hasRustLabel || titleHasRust || bodyHasRust;
+    return isRelevantRepo || hasRelevantLabel || titleRelevant || bodyRelevant;
   });
 }
 
 /**
  * Formats PR data for README display
- * @param {Array} rustPRs - Array of Rust-related PRs
+ * @param {Array} relevantPRs - Array of Rust/Go-related PRs
  * @returns {string} - Formatted markdown content
  */
-function formatPRsForReadme(rustPRs) {
-  if (rustPRs.length === 0) {
-    return '### Open Source Contributions\n- No Rust-related PRs found yet.\n';
+function formatPRsForReadme(relevantPRs) {
+  if (relevantPRs.length === 0) {
+    return '### Open Source Contributions\n- No Rust/Go-related PRs found yet.\n';
   }
 
-  const prItems = rustPRs
+  const prItems = relevantPRs
     .slice(0, config.maxPRsToShow)
     .map(pr => {
       const repoName = pr.repository_url.replace('https://api.github.com/repos/', '');
@@ -127,21 +136,23 @@ function updateReadme(contributionsSection) {
         `$1${contributionsSection.replace('### Open Source Contributions\n', '')}$2`
       );
     } else {
-      // Add new section before "Other Featured Projects"
-      const otherProjectsRegex = /(## 🏆 Other Featured Projects)/;
-      if (otherProjectsRegex.test(readmeContent)) {
+      // Add new section before "Other Featured Projects" or at the end of "Coding Activity"
+      // Looking for a good anchor point
+      const anchorRegex = /(<!--END_SECTION:waka-->)/;
+      if (anchorRegex.test(readmeContent)) {
         readmeContent = readmeContent.replace(
-          otherProjectsRegex, 
-          `${contributionsSection}\n$1`
+            anchorRegex,
+            `$1\n\n${contributionsSection}`
         );
       } else {
-        console.error('Could not find a suitable location to insert the contributions section');
-        return;
+         // Fallback to appending if waka section not found (unlikely based on current readme)
+         console.error('Could not find a suitable location to insert the contributions section');
+         return;
       }
     }
     
     fs.writeFileSync(config.readmePath, readmeContent, 'utf8');
-    console.log('README.md updated successfully with Rust PR information!');
+    console.log('README.md updated successfully with Rust & Go PR information!');
   } catch (error) {
     console.error(`Failed to update README: ${error.message}`);
   }
@@ -156,10 +167,10 @@ async function main() {
     const prs = await fetchUserPRs(config.githubUsername);
     console.log(`Found ${prs.length} total PRs`);
     
-    const rustPRs = filterRustPRs(prs);
-    console.log(`Found ${rustPRs.length} Rust-related PRs`);
+    const relevantPRs = filterRelevantPRs(prs);
+    console.log(`Found ${relevantPRs.length} Rust/Go-related PRs`);
     
-    const contributionsSection = formatPRsForReadme(rustPRs);
+    const contributionsSection = formatPRsForReadme(relevantPRs);
     updateReadme(contributionsSection);
   } catch (error) {
     console.error(`Error: ${error.message}`);
