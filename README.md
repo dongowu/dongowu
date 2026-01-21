@@ -31,7 +31,7 @@
   <img src="./developer.gif" width="250" alt="Developer Animation">
 </div>
 
-## �‍💻 About Me
+## 👨‍💻 About Me
 
 ```rust
 struct Developer {
