@@ -1,19 +1,4 @@
 {
-  "2025-02": {
-    "count": 1,
-    "repositories": {
-      "move-cn/letsmove": 1
-    },
-    "prs": [
-      {
-        "title": "task1 done",
-        "url": "https://github.com/move-cn/letsmove/pull/2222",
-        "repo": "move-cn/letsmove",
-        "created_at": "2025-02-20T04:14:08Z",
-        "state": "closed"
-      }
-    ]
-  },
   "2025-03": {
     "count": 0,
     "repositories": {},
@@ -125,14 +110,14 @@
         "url": "https://github.com/MystenLabs/suiup/pull/102",
         "repo": "MystenLabs/suiup",
         "created_at": "2025-08-11T04:08:29Z",
-        "state": "open"
+        "state": "closed"
       },
       {
         "title": "Feat:Move all *.json files to the config directory ",
         "url": "https://github.com/MystenLabs/suiup/pull/101",
         "repo": "MystenLabs/suiup",
         "created_at": "2025-08-09T23:58:56Z",
-        "state": "open"
+        "state": "closed"
       },
       {
         "title": "Fix : Integration testing and the issue of not being able to find files when installing SUI/Warlrus in a Windows environment.",
@@ -335,13 +320,71 @@
     ]
   },
   "2026-01": {
-    "count": 6,
+    "count": 14,
     "repositories": {
+      "GoPolymarket/polymarket-go-sdk": 6,
+      "GoPolymarket/go-builder-relayer-client": 2,
       "MystenLabs/sui": 4,
       "hoh-zone/SuiMacMini": 1,
       "MystenLabs/deepbookv3": 1
     },
     "prs": [
+      {
+        "title": "Create debricked.yml",
+        "url": "https://github.com/GoPolymarket/polymarket-go-sdk/pull/9",
+        "repo": "GoPolymarket/polymarket-go-sdk",
+        "created_at": "2026-01-31T07:17:27Z",
+        "state": "closed"
+      },
+      {
+        "title": "Potential fix for code scanning alert no. 1: Clear-text logging of sensitive information",
+        "url": "https://github.com/GoPolymarket/polymarket-go-sdk/pull/8",
+        "repo": "GoPolymarket/polymarket-go-sdk",
+        "created_at": "2026-01-31T07:09:58Z",
+        "state": "closed"
+      },
+      {
+        "title": "Create dependabot.yml",
+        "url": "https://github.com/GoPolymarket/polymarket-go-sdk/pull/7",
+        "repo": "GoPolymarket/polymarket-go-sdk",
+        "created_at": "2026-01-31T07:09:00Z",
+        "state": "closed"
+      },
+      {
+        "title": "Update SECURITY.md",
+        "url": "https://github.com/GoPolymarket/go-builder-relayer-client/pull/4",
+        "repo": "GoPolymarket/go-builder-relayer-client",
+        "created_at": "2026-01-31T07:04:13Z",
+        "state": "closed"
+      },
+      {
+        "title": "Potential fix for code scanning alert no. 1: Workflow does not contain permissions",
+        "url": "https://github.com/GoPolymarket/go-builder-relayer-client/pull/3",
+        "repo": "GoPolymarket/go-builder-relayer-client",
+        "created_at": "2026-01-31T06:56:02Z",
+        "state": "closed"
+      },
+      {
+        "title": "Bump golangci-lint to v1.64.5 for Go 1.24 compatibility",
+        "url": "https://github.com/GoPolymarket/polymarket-go-sdk/pull/6",
+        "repo": "GoPolymarket/polymarket-go-sdk",
+        "created_at": "2026-01-29T06:38:55Z",
+        "state": "closed"
+      },
+      {
+        "title": "Align CI to Go 1.24, add golangci-lint workflow, and add security audit docs",
+        "url": "https://github.com/GoPolymarket/polymarket-go-sdk/pull/5",
+        "repo": "GoPolymarket/polymarket-go-sdk",
+        "created_at": "2026-01-29T06:23:54Z",
+        "state": "closed"
+      },
+      {
+        "title": "Add security audit guide and CI vulnerability scan; refresh README and docs",
+        "url": "https://github.com/GoPolymarket/polymarket-go-sdk/pull/4",
+        "repo": "GoPolymarket/polymarket-go-sdk",
+        "created_at": "2026-01-29T04:45:57Z",
+        "state": "closed"
+      },
       {
         "title": "feat(suiSdk): add get_first_coin_with_balance_greater_than_or_eq",
         "url": "https://github.com/MystenLabs/sui/pull/25057",
@@ -383,6 +426,21 @@
         "repo": "MystenLabs/deepbookv3",
         "created_at": "2026-01-06T17:07:15Z",
         "state": "closed"
+      }
+    ]
+  },
+  "2026-02": {
+    "count": 1,
+    "repositories": {
+      "GoPolymarket/polymarket-go-sdk": 1
+    },
+    "prs": [
+      {
+        "title": "refactor: unify error handling and logging systems",
+        "url": "https://github.com/GoPolymarket/polymarket-go-sdk/pull/10",
+        "repo": "GoPolymarket/polymarket-go-sdk",
+        "created_at": "2026-02-01T00:57:12Z",
+        "state": "open"
       }
     ]
   }
