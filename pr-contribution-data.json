@@ -71,7 +71,7 @@
         "state": "closed"
       },
       {
-        "title": "【8月贡献】",
+        "title": "【8月���献】",
         "url": "https://github.com/hoh-zone/SuiMacMini/pull/22",
         "repo": "hoh-zone/SuiMacMini",
         "created_at": "2025-08-28T11:06:08Z",
@@ -430,17 +430,40 @@
     ]
   },
   "2026-02": {
-    "count": 1,
+    "count": 4,
     "repositories": {
-      "GoPolymarket/polymarket-go-sdk": 1
+      "GoPolymarket/polymarket-go-sdk": 2,
+      "dongowu/git-ai-cli": 1,
+      "MystenLabs/deepbookv3": 1
     },
     "prs": [
+      {
+        "title": "Initialize default RTDS client in root constructor",
+        "url": "https://github.com/GoPolymarket/polymarket-go-sdk/pull/11",
+        "repo": "GoPolymarket/polymarket-go-sdk",
+        "created_at": "2026-02-07T10:04:39Z",
+        "state": "closed"
+      },
+      {
+        "title": "feat(copilot): implement Intelligent Git Guardian with deep code anal…",
+        "url": "https://github.com/dongowu/git-ai-cli/pull/2",
+        "repo": "dongowu/git-ai-cli",
+        "created_at": "2026-02-06T12:27:17Z",
+        "state": "closed"
+      },
+      {
+        "title": "fix(schema): change client_order_id from i64 to BigDecimal",
+        "url": "https://github.com/MystenLabs/deepbookv3/pull/826",
+        "repo": "MystenLabs/deepbookv3",
+        "created_at": "2026-02-02T06:07:06Z",
+        "state": "open"
+      },
       {
         "title": "refactor: unify error handling and logging systems",
         "url": "https://github.com/GoPolymarket/polymarket-go-sdk/pull/10",
         "repo": "GoPolymarket/polymarket-go-sdk",
         "created_at": "2026-02-01T00:57:12Z",
-        "state": "open"
+        "state": "closed"
       }
     ]
   }
