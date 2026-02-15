@@ -153,16 +153,16 @@
     </g>
   
     <g>
-      <rect x="691.6666666666667" y="192.85714285714286" width="56.333333333333336" height="57.14285714285714" class="bar">
+      <rect x="691.6666666666667" y="150" width="56.333333333333336" height="100" class="bar">
         <title>
-          4 PRs
+          7 PRs
           
-            &#10;GoPolymarket/polymarket-go-sdk: 2 PRs
-            &#10;dongowu/git-ai-cli: 1 PR
-            &#10;MystenLabs/deepbookv3: 1 PR
+            &#10;GoPolymarket/polymarket-go-sdk: 3 PRs
+            &#10;MystenLabs/sui: 1 PR
+            &#10;tw93/Kaku: 1 PR
         </title>
       </rect>
-      <text x="719.8333333333334" y="187.85714285714286" text-anchor="middle" class="label">4</text>
+      <text x="719.8333333333334" y="145" text-anchor="middle" class="label">7</text>
     </g>
   
   
@@ -199,5 +199,5 @@
   <text x="40" y="150" text-anchor="end" class="label">7</text>
   
   <!-- Watermark -->
-  <text x="750" y="290" text-anchor="end" class="label" opacity="0.5">Generated on 2026-02-08</text>
+  <text x="750" y="290" text-anchor="end" class="label" opacity="0.5">Generated on 2026-02-15</text>
 </svg>

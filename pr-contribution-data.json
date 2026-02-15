@@ -71,7 +71,7 @@
         "state": "closed"
       },
       {
-        "title": "【8月���献】",
+        "title": "【8月贡献】",
         "url": "https://github.com/hoh-zone/SuiMacMini/pull/22",
         "repo": "hoh-zone/SuiMacMini",
         "created_at": "2025-08-28T11:06:08Z",
@@ -103,7 +103,7 @@
         "url": "https://github.com/cloudwego/sonic-rs/pull/189",
         "repo": "cloudwego/sonic-rs",
         "created_at": "2025-08-12T11:36:53Z",
-        "state": "open"
+        "state": "closed"
       },
       {
         "title": "Feat(config): add config command ",
@@ -430,13 +430,36 @@
     ]
   },
   "2026-02": {
-    "count": 4,
+    "count": 7,
     "repositories": {
-      "GoPolymarket/polymarket-go-sdk": 2,
+      "MystenLabs/sui": 1,
+      "tw93/Kaku": 1,
+      "GoPolymarket/polymarket-go-sdk": 3,
       "dongowu/git-ai-cli": 1,
       "MystenLabs/deepbookv3": 1
     },
     "prs": [
+      {
+        "title": "[hardening] Replace unwrap/expect/assert with proper error handling in accumulator_root",
+        "url": "https://github.com/MystenLabs/sui/pull/25431",
+        "repo": "MystenLabs/sui",
+        "created_at": "2026-02-12T02:40:59Z",
+        "state": "open"
+      },
+      {
+        "title": "refactor: apply idiomatic Rust cleanups across GUI and CLI",
+        "url": "https://github.com/tw93/Kaku/pull/20",
+        "repo": "tw93/Kaku",
+        "created_at": "2026-02-12T01:58:33Z",
+        "state": "closed"
+      },
+      {
+        "title": "Fix RTDS example startup race and price history parsing",
+        "url": "https://github.com/GoPolymarket/polymarket-go-sdk/pull/18",
+        "repo": "GoPolymarket/polymarket-go-sdk",
+        "created_at": "2026-02-09T02:23:12Z",
+        "state": "closed"
+      },
       {
         "title": "Initialize default RTDS client in root constructor",
         "url": "https://github.com/GoPolymarket/polymarket-go-sdk/pull/11",
