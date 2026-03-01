@@ -1,9 +1,4 @@
 {
-  "2025-03": {
-    "count": 0,
-    "repositories": {},
-    "prs": []
-  },
   "2025-04": {
     "count": 0,
     "repositories": {},
@@ -141,7 +136,7 @@
         "state": "closed"
       },
       {
-        "title": "[8月贡��� PR]",
+        "title": "[8月贡献 PR]",
         "url": "https://github.com/hoh-zone/SuiMacMini/pull/17",
         "repo": "hoh-zone/SuiMacMini",
         "created_at": "2025-08-06T15:31:14Z",
@@ -430,9 +425,11 @@
     ]
   },
   "2026-02": {
-    "count": 7,
+    "count": 10,
     "repositories": {
-      "MystenLabs/sui": 1,
+      "solanabr/solana-stablecoin-standard": 1,
+      "zeroclaw-labs/zeroclaw": 1,
+      "MystenLabs/sui": 2,
       "tw93/Kaku": 1,
       "GoPolymarket/polymarket-go-sdk": 3,
       "dongowu/git-ai-cli": 1,
@@ -440,11 +437,32 @@
     },
     "prs": [
       {
+        "title": "feat: Solana Stablecoin Standard SDK (SSS-1/SSS-2) + devnet proof",
+        "url": "https://github.com/solanabr/solana-stablecoin-standard/pull/8",
+        "repo": "solanabr/solana-stablecoin-standard",
+        "created_at": "2026-02-26T04:39:33Z",
+        "state": "open"
+      },
+      {
+        "title": "COM-123 refactor(providers): centralize static compatible provider descriptors",
+        "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/1870",
+        "repo": "zeroclaw-labs/zeroclaw",
+        "created_at": "2026-02-26T03:09:16Z",
+        "state": "open"
+      },
+      {
+        "title": "Improve error handling in deny_list_v1.rs to match other system object getters",
+        "url": "https://github.com/MystenLabs/sui/pull/25594",
+        "repo": "MystenLabs/sui",
+        "created_at": "2026-02-24T06:11:12Z",
+        "state": "open"
+      },
+      {
         "title": "[hardening] Replace unwrap/expect/assert with proper error handling in accumulator_root",
         "url": "https://github.com/MystenLabs/sui/pull/25431",
         "repo": "MystenLabs/sui",
         "created_at": "2026-02-12T02:40:59Z",
-        "state": "open"
+        "state": "closed"
       },
       {
         "title": "refactor: apply idiomatic Rust cleanups across GUI and CLI",
@@ -489,5 +507,10 @@
         "state": "closed"
       }
     ]
+  },
+  "2026-03": {
+    "count": 0,
+    "repositories": {},
+    "prs": []
   }
 }
