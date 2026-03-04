@@ -54,21 +54,8 @@ I build infrastructure at the intersection of **AI Agents** and **Web3 data/trad
 - **[SuiForge/sui-deepbook-indexer](https://github.com/SuiForge/sui-deepbook-indexer)** — indexing pipeline for Sui/Deepbook data
 - **[SuiForge/sui_vertical_index_api](https://github.com/SuiForge/sui_vertical_index_api)** — API layer for indexed on-chain data
 
-<p align="center">
-  <a href="https://github.com/dongowu">
-    <img height="170" src="https://github-readme-stats.vercel.app/api?username=dongowu&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&rank_icon=github" alt="GitHub Stats" />
-  </a>
-</p>
 
-<p align="center">
-  <a href="https://github.com/dongowu">
-    <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dongowu&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&cache_seconds=86400" alt="Top Languages" />
-  </a>
-</p>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dongowu&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</p>
 
 <p align="center">
   <picture>
