@@ -18,11 +18,13 @@
   </a>
 </p>
 
-<p>
-  <img src="https://komarev.com/ghpvc/?username=dongowu&color=blueviolet&style=flat-square&label=Profile+Views" alt="Profile Views" />
-  <img src="https://img.shields.io/github/followers/dongowu?label=Followers&style=flat-square&color=blue" alt="GitHub Followers" />
-  <img src="https://img.shields.io/github/stars/dongowu?affiliations=OWNER%2CCOLLABORATOR&style=flat-square&color=yellow" alt="GitHub Stars" />
-</p>
+<p><strong>GitHub Native Snapshot</strong></p>
+
+- Followers: **46**
+- Following: **96**
+- Public Repos: **20**
+- Owned Repos: **24**
+- Stars Received (owned repos): **9**
 
 </div>
 
@@ -73,4 +75,4 @@ I build infrastructure at the intersection of **AI Agents** and **Web3 data/trad
 - Email: [jason_w96@163.com](mailto:jason_w96@163.com)
 - Twitter (X): [@dongowu1](https://twitter.com/dongowu1)
 
-<div align="center"><strong>Build useful systems. Keep shipping.</strong></div>
+<div align="center"><strong>Build useful systems. Keep shipping.</strong><br/>Last updated: 2026-03-04</div>
