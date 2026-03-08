@@ -68,16 +68,16 @@
     </g>
   
     <g>
-      <rect x="283.33333333333337" y="64.28571428571428" width="56.333333333333336" height="185.71428571428572" class="bar">
+      <rect x="283.33333333333337" y="78.57142857142858" width="56.333333333333336" height="171.42857142857142" class="bar">
         <title>
-          13 PRs
+          12 PRs
           
             &#10;MystenLabs/suiup: 6 PRs
             &#10;hoh-zone/SuiMacMini: 2 PRs
             &#10;MystenLabs/sui: 1 PR
         </title>
       </rect>
-      <text x="311.50000000000006" y="59.28571428571428" text-anchor="middle" class="label">13</text>
+      <text x="311.50000000000006" y="73.57142857142858" text-anchor="middle" class="label">12</text>
     </g>
   
     <g>
@@ -94,16 +94,16 @@
     </g>
   
     <g>
-      <rect x="400" y="178.57142857142856" width="56.333333333333336" height="71.42857142857143" class="bar">
+      <rect x="400" y="192.85714285714286" width="56.333333333333336" height="57.14285714285714" class="bar">
         <title>
-          5 PRs
+          4 PRs
           
             &#10;block-vision/sui-go-sdk: 2 PRs
             &#10;volo-rs/volo-loadbalance: 1 PR
             &#10;MystenLabs/sui: 1 PR
         </title>
       </rect>
-      <text x="428.1666666666667" y="173.57142857142856" text-anchor="middle" class="label">5</text>
+      <text x="428.1666666666667" y="187.85714285714286" text-anchor="middle" class="label">4</text>
     </g>
   
     <g>
@@ -156,13 +156,14 @@
     </g>
   
     <g>
-      <rect x="691.6666666666667" y="250" width="56.333333333333336" height="0" class="bar">
+      <rect x="691.6666666666667" y="221.42857142857144" width="56.333333333333336" height="28.57142857142857" class="bar">
         <title>
-          0 PRs
+          2 PRs
           
+            &#10;zeroclaw-labs/zeroclaw: 2 PRs
         </title>
       </rect>
-      <text x="719.8333333333334" y="245" text-anchor="middle" class="label">0</text>
+      <text x="719.8333333333334" y="216.42857142857144" text-anchor="middle" class="label">2</text>
     </g>
   
   
@@ -199,5 +200,5 @@
   <text x="40" y="150" text-anchor="end" class="label">7</text>
   
   <!-- Watermark -->
-  <text x="750" y="290" text-anchor="end" class="label" opacity="0.5">Generated on 2026-03-01</text>
+  <text x="750" y="290" text-anchor="end" class="label" opacity="0.5">Generated on 2026-03-08</text>
 </svg>
