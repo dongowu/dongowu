@@ -4,106 +4,59 @@
 
 # dongowu
 
-**Rust / Go Engineer · Full-Stack Builder · Open Source Contributor**
+**Go / Rust backend engineer**
+
+**Building agent platforms, developer tooling, and protocol-grade infrastructure.**
+
+**Go / Rust 后端工程师，专注 Agent 平台、开发者工具与协议级基础设施。**
 
 <p>
-  <a href="https://github.com/dongowu">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-  <a href="mailto:jason_w96@163.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://twitter.com/dongowu1">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=x&logoColor=white" alt="Twitter" />
-  </a>
-</p>
-
-<p>
-  <img src="https://komarev.com/ghpvc/?username=dongowu&color=blueviolet&style=flat-square&label=Profile+Views" alt="Profile Views" />
-  <img src="https://img.shields.io/github/followers/dongowu?label=Followers&style=flat-square&color=blue" alt="GitHub Followers" />
+  <a href="https://github.com/dongowu">GitHub</a> ·
+  <a href="mailto:jason_w96@163.com">Email</a> ·
+  <a href="https://twitter.com/dongowu1">X</a>
 </p>
 
 </div>
 
----
+## About / 关于
 
-## 🔎 Quick Snapshot
+I build systems meant to survive production: clear boundaries, strong guardrails, and real operator workflows.
 
-- Building high-performance backend services with **Rust** and **Go**.
-- Focused on developer efficiency through automation and tooling.
-- Open to collaboration on practical open-source engineering projects.
+我关注真正能跑进生产环境的系统：边界清晰、护栏明确、可观测、可运维。
 
----
+Public work areas:
 
-## 📈 GitHub Dashboard
+- Agent platforms and developer tooling
+- Backend control planes and infrastructure services
+- Protocol-aware backend systems and on-chain data products
 
-<p align="center">
-  <a href="https://github.com/dongowu">
-    <img height="170" src="https://github-readme-stats.vercel.app/api?username=dongowu&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&rank_icon=github" alt="GitHub Stats" />
-  </a>
-</p>
+公开可见的工作方向：
 
-<p align="center">
-  <a href="https://github.com/dongowu">
-    <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dongowu&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&cache_seconds=86400" alt="Top Languages" />
-  </a>
-</p>
+- Agent 平台与开发者工具
+- 后端控制面与基础设施服务
+- 协议感知的后端系统与链上数据产品
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dongowu&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</p>
+## Public Work / 公开项目
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./dist/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./dist/github-contribution-grid-snake.svg" />
-    <img src="./dist/github-contribution-grid-snake.svg" alt="Contribution Snake" />
-  </picture>
-</p>
+- [AgentOS](https://github.com/dongowu/agentos) — open-source agent execution platform built with Go + Rust.
+- [git-ai-cli](https://github.com/dongowu/git-ai-cli) — AI-powered Git workflow assistant.
+- [SolaGate](https://github.com/dongowu/solanaGate) — Solana-based API key and prepaid billing control plane.
+- [MystenLabs/sui](https://github.com/MystenLabs/sui) — upstream fixes and performance-oriented Rust contributions.
 
----
+## Principles / 原则
 
-## 🧠 Current Priorities
+- Operability over demos
+- Clear contracts, limits, and failure modes
+- Go for APIs and control planes
+- Rust for correctness, performance, and footprint
 
-1. Rust async architecture and performance tuning.
-2. CI/CD and engineering workflow automation.
-3. Reusable internal tooling and OSS contributions.
+- 先保证可运行、可维护，再追求展示效果
+- 重视系统边界、限流护栏与失败路径
+- Go 适合 API 与控制面
+- Rust 适合正确性、性能与资源敏感场景
 
----
+## Contact / 联系我
 
-## 🧰 Toolbox
+If you are building agent infrastructure, developer tools, or protocol-aware backend systems, feel free to reach out at [jason_w96@163.com](mailto:jason_w96@163.com).
 
-**Languages**
-
-![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-
-**Infra / Platform**
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326ce5?style=flat-square&logo=kubernetes&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-
----
-
-## 🗂 Selected Work in This Repo
-
-A few practical outputs in this repository that show my automation and visualization workflow:
-
-- [`generate-interactive-pr-graph.js`](./generate-interactive-pr-graph.js) + [`pr-contribution-graph.html`](./pr-contribution-graph.html): builds and renders an interactive PR contribution view.
-- [`update-rust-projects.js`](./update-rust-projects.js): refreshes project data used by contribution visualizations.
-- [`pr-contribution-graph.svg`](./pr-contribution-graph.svg): exported static snapshot for sharing and embedding.
-
----
-
-## ☕ Contact
-
-- GitHub: [@dongowu](https://github.com/dongowu)
-- Email: [jason_w96@163.com](mailto:jason_w96@163.com)
-- Twitter (X): [@dongowu1](https://twitter.com/dongowu1)
-
-<div align="center"><strong>Code is poetry written in logic.</strong></div>
+如果你也在做 Agent 基础设施、开发者工具或协议后端系统，欢迎通过 [jason_w96@163.com](mailto:jason_w96@163.com) 联系我。
