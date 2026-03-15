@@ -409,8 +409,9 @@
     ]
   },
   "2026-02": {
-    "count": 10,
+    "count": 29,
     "repositories": {
+      "dongowu/agentos": 19,
       "solanabr/solana-stablecoin-standard": 1,
       "zeroclaw-labs/zeroclaw": 1,
       "MystenLabs/sui": 2,
@@ -420,6 +421,139 @@
       "MystenLabs/deepbookv3": 1
     },
     "prs": [
+      {
+        "title": "feat: add timeout control for script LLM adapter",
+        "url": "https://github.com/dongowu/agentos/pull/20",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-28T09:16:16Z",
+        "state": "closed"
+      },
+      {
+        "title": "feat: add retry controls for script LLM adapter",
+        "url": "https://github.com/dongowu/agentos/pull/19",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-28T08:12:06Z",
+        "state": "closed"
+      },
+      {
+        "title": "feat: add pluggable external LLM adapter layer",
+        "url": "https://github.com/dongowu/agentos/pull/18",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-28T07:29:12Z",
+        "state": "closed"
+      },
+      {
+        "title": "docs: publish stage-1 completion report",
+        "url": "https://github.com/dongowu/agentos/pull/17",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-28T06:33:22Z",
+        "state": "closed"
+      },
+      {
+        "title": "chore: verify invalid profile rejection in stage-1 acceptance",
+        "url": "https://github.com/dongowu/agentos/pull/16",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-28T06:19:25Z",
+        "state": "closed"
+      },
+      {
+        "title": "chore: assert fallback routing in stage-1 acceptance",
+        "url": "https://github.com/dongowu/agentos/pull/15",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-28T06:02:05Z",
+        "state": "closed"
+      },
+      {
+        "title": "chore: assert merge rework evidence in stage-1 acceptance",
+        "url": "https://github.com/dongowu/agentos/pull/14",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-28T05:50:38Z",
+        "state": "closed"
+      },
+      {
+        "title": "chore: add JSON assertions to stage-1 acceptance",
+        "url": "https://github.com/dongowu/agentos/pull/13",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-28T05:40:37Z",
+        "state": "closed"
+      },
+      {
+        "title": "chore: add stage-1 acceptance automation script",
+        "url": "https://github.com/dongowu/agentos/pull/12",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-28T05:03:52Z",
+        "state": "closed"
+      },
+      {
+        "title": "docs: add stage-1 internal acceptance checklist",
+        "url": "https://github.com/dongowu/agentos/pull/11",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-28T04:50:34Z",
+        "state": "closed"
+      },
+      {
+        "title": "feat: allow whitespace around routing operators",
+        "url": "https://github.com/dongowu/agentos/pull/10",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-28T04:45:20Z",
+        "state": "closed"
+      },
+      {
+        "title": "feat: add strict inequality operators to routing expressions",
+        "url": "https://github.com/dongowu/agentos/pull/9",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-28T04:33:06Z",
+        "state": "closed"
+      },
+      {
+        "title": "feat: support parenthesized routing expressions",
+        "url": "https://github.com/dongowu/agentos/pull/8",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-28T04:26:12Z",
+        "state": "closed"
+      },
+      {
+        "title": "feat: support boolean literals in routing expressions",
+        "url": "https://github.com/dongowu/agentos/pull/7",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-28T04:18:42Z",
+        "state": "closed"
+      },
+      {
+        "title": "feat: support negation in merge routing expressions",
+        "url": "https://github.com/dongowu/agentos/pull/6",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-28T04:08:56Z",
+        "state": "closed"
+      },
+      {
+        "title": "feat: support conditional merge rework routing rules",
+        "url": "https://github.com/dongowu/agentos/pull/5",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-28T02:53:38Z",
+        "state": "closed"
+      },
+      {
+        "title": "feat: add pluggable cross-team merge strategy",
+        "url": "https://github.com/dongowu/agentos/pull/4",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-28T02:16:25Z",
+        "state": "closed"
+      },
+      {
+        "title": "feat: add plugin-based enterprise agent team runtime",
+        "url": "https://github.com/dongowu/agentos/pull/3",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-27T23:56:46Z",
+        "state": "closed"
+      },
+      {
+        "title": "feat: add blackbox HTTP API for job lifecycle",
+        "url": "https://github.com/dongowu/agentos/pull/2",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-02-27T23:18:48Z",
+        "state": "closed"
+      },
       {
         "title": "feat: Solana Stablecoin Standard SDK (SSS-1/SSS-2) + devnet proof",
         "url": "https://github.com/solanabr/solana-stablecoin-standard/pull/8",
@@ -493,17 +627,62 @@
     ]
   },
   "2026-03": {
-    "count": 2,
+    "count": 8,
     "repositories": {
+      "MystenLabs/sui": 2,
+      "dongowu/agentos": 2,
+      "GoPolymarket/polymarket-go-sdk": 2,
       "zeroclaw-labs/zeroclaw": 2
     },
     "prs": [
+      {
+        "title": " fix(kvstore): decode balance_changes and unchanged_loaded_runtime_objects from KV store",
+        "url": "https://github.com/MystenLabs/sui/pull/25828",
+        "repo": "MystenLabs/sui",
+        "created_at": "2026-03-13T13:38:19Z",
+        "state": "open"
+      },
+      {
+        "title": "refactor(indexer-alt): use query! macro in prune handlers",
+        "url": "https://github.com/MystenLabs/sui/pull/25824",
+        "repo": "MystenLabs/sui",
+        "created_at": "2026-03-13T06:08:44Z",
+        "state": "closed"
+      },
+      {
+        "title": "feat: ship agent team phase 1 MVP",
+        "url": "https://github.com/dongowu/agentos/pull/22",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-03-09T11:27:41Z",
+        "state": "open"
+      },
+      {
+        "title": "fix(clob): handle flexible order response fields in Orders()",
+        "url": "https://github.com/GoPolymarket/polymarket-go-sdk/pull/31",
+        "repo": "GoPolymarket/polymarket-go-sdk",
+        "created_at": "2026-03-09T06:44:49Z",
+        "state": "closed"
+      },
+      {
+        "title": "Fix/clob orders flexible time fields",
+        "url": "https://github.com/GoPolymarket/polymarket-go-sdk/pull/30",
+        "repo": "GoPolymarket/polymarket-go-sdk",
+        "created_at": "2026-03-09T06:08:56Z",
+        "state": "closed"
+      },
+      {
+        "title": "feat: merge open-source baseline and platform closure",
+        "url": "https://github.com/dongowu/agentos/pull/21",
+        "repo": "dongowu/agentos",
+        "created_at": "2026-03-09T01:28:11Z",
+        "state": "closed"
+      },
       {
         "title": "refactor(providers): centralize static compatible provider descriptor…",
         "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/2609",
         "repo": "zeroclaw-labs/zeroclaw",
         "created_at": "2026-03-03T05:39:06Z",
-        "state": "open"
+        "state": "closed"
       },
       {
         "title": "fix(service): escape systemd env values in generated unit",
