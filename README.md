@@ -22,7 +22,7 @@ Backend engineer building high-performance systems with Rust and Go. Focused on 
 
 ### Featured Projects
 
-| Project | Lang | Description |
+| Project | Language | Description |
 |---------|------|-------------|
 | [git-ai-cli](https://github.com/dongowu/git-ai-cli) | Rust | AI-driven Git commit message generator |
 | [EcoPilot](https://github.com/dongowu/EcoPilot) | Python | Agent governance platform |
