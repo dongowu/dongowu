@@ -681,8 +681,18 @@
     ]
   },
   "2026-04": {
-    "count": 0,
-    "repositories": {},
-    "prs": []
+    "count": 1,
+    "repositories": {
+      "GoPolymarket/polymarket-go-sdk": 1
+    },
+    "prs": [
+      {
+        "title": "fix(clob): support flexible order time fields & make govulncheck advisory",
+        "url": "https://github.com/GoPolymarket/polymarket-go-sdk/pull/42",
+        "repo": "GoPolymarket/polymarket-go-sdk",
+        "created_at": "2026-04-13T09:42:54Z",
+        "state": "closed"
+      }
+    ]
   }
 }
