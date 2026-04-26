@@ -203,5 +203,5 @@
   <text x="40" y="150" text-anchor="end" class="label">14</text>
   
   <!-- Watermark -->
-  <text x="750" y="290" text-anchor="end" class="label" opacity="0.5">Generated on 2026-04-19</text>
+  <text x="750" y="290" text-anchor="end" class="label" opacity="0.5">Generated on 2026-04-26</text>
 </svg>
