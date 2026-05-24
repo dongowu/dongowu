@@ -666,8 +666,18 @@
     ]
   },
   "2026-05": {
-    "count": 0,
-    "repositories": {},
-    "prs": []
+    "count": 1,
+    "repositories": {
+      "hoh-zone/Overflow2026-CNNo1": 1
+    },
+    "prs": [
+      {
+        "title": "add project description",
+        "url": "https://github.com/hoh-zone/Overflow2026-CNNo1/pull/5",
+        "repo": "hoh-zone/Overflow2026-CNNo1",
+        "created_at": "2026-05-20T01:48:35Z",
+        "state": "open"
+      }
+    ]
   }
 }
