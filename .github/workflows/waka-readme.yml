@@ -16,23 +16,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         
-      - name: Set up environment
-        run: |
-          # 创建临时文件来传递 token
-          echo "GITHUB_TOKEN=${{ github.token }}" >> $GITHUB_ENV
-          echo "INPUT_GH_TOKEN=${{ github.token }}" >> $GITHUB_ENV
-          
       - name: Run WakaTime stats
-        # 使用 fork 版本，有些 fork 版本支持 GITHUB_TOKEN
         uses: anmol098/waka-readme-stats@master
-        env:
-          # 尝试通过环境变量传递
-          GH_TOKEN: ${{ github.token }}
-          INPUT_GH_TOKEN: ${{ github.token }}
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          # 尝试两种方式
-          GH_TOKEN: ${{ github.token }}  # 直接传递
+          GH_TOKEN: ${{ github.token }}
           
           # 显示配置
           SHOW_LINES_OF_CODE: "True"

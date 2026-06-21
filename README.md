@@ -76,4 +76,6 @@ Backend engineer building high-performance systems with Rust and Go. Focused on 
 
 ---
 
+<!--END_SECTION:waka-->
+
 <div align="center"><em>Code is poetry written in logic.</em></div>

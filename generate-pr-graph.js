@@ -30,7 +30,8 @@ function fetchUserPRs(username) {
       method: 'GET',
       headers: {
         'User-Agent': 'PR-Graph-Generator',
-        'Accept': 'application/vnd.github.v3+json'
+        'Accept': 'application/vnd.github.v3+json',
+        'Authorization': `token ${process.env.GITHUB_TOKEN}`
       }
     };
 
@@ -223,14 +224,6 @@ async function main() {
     const svgContent = generateSVGGraph(monthlyData);
     fs.writeFileSync(config.outputPath, svgContent, 'utf8');
     console.log(`PR contribution graph saved to: ${config.outputPath}`);
-    
-    // Also save data as JSON for potential future use
-    fs.writeFileSync(
-      path.join(__dirname, 'pr-contribution-data.json'), 
-      JSON.stringify(monthlyData, null, 2), 
-      'utf8'
-    );
-    console.log('PR contribution data saved as JSON');
   } catch (error) {
     console.error(`Error: ${error.message}`);
     process.exit(1);

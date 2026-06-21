@@ -30,7 +30,8 @@ function fetchUserPRs(username) {
       method: 'GET',
       headers: {
         'User-Agent': 'PR-Graph-Generator',
-        'Accept': 'application/vnd.github.v3+json'
+        'Accept': 'application/vnd.github.v3+json',
+        'Authorization': `token ${process.env.GITHUB_TOKEN}`
       }
     };
 
