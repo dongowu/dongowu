@@ -78,4 +78,12 @@ Backend engineer building high-performance systems with Rust and Go. Focused on 
 
 <!--END_SECTION:waka-->
 
+### Open Source Contributions
+- **[hoh-zone/Overflow2026-CNNo1](https://github.com/hoh-zone/Overflow2026-CNNo1/pull/5)**: add project description
+- **[GoPolymarket/polymarket-go-sdk](https://github.com/GoPolymarket/polymarket-go-sdk/pull/42)**: fix(clob): support flexible order time fields & make govulncheck advisory
+- **[MystenLabs/sui](https://github.com/MystenLabs/sui/pull/26038)**: [types][cleanup] fix typo: barreier -> barrier in governance.rs
+- **[MystenLabs/sui](https://github.com/MystenLabs/sui/pull/25828)**:  fix(kvstore): decode balance_changes and unchanged_loaded_runtime_objects from KV store
+- **[MystenLabs/sui](https://github.com/MystenLabs/sui/pull/25824)**: refactor(indexer-alt): use query! macro in prune handlers
+
+
 <div align="center"><em>Code is poetry written in logic.</em></div>
