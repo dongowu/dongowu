@@ -84,6 +84,3 @@ Backend engineer building high-performance systems with Rust and Go. Focused on 
 - **[MystenLabs/sui](https://github.com/MystenLabs/sui/pull/26038)**: [types][cleanup] fix typo: barreier -> barrier in governance.rs
 - **[MystenLabs/sui](https://github.com/MystenLabs/sui/pull/25828)**:  fix(kvstore): decode balance_changes and unchanged_loaded_runtime_objects from KV store
 - **[MystenLabs/sui](https://github.com/MystenLabs/sui/pull/25824)**: refactor(indexer-alt): use query! macro in prune handlers
-
-
-<div align="center"><em>Code is poetry written in logic.</em></div>
