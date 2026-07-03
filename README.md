@@ -126,10 +126,7 @@ Backend engineer building high-performance systems with **Rust** and **Go**. Foc
   <br/>
   <br/>
 
-  <!-- PR Contribution Graph -->
-  <img src="./pr-contribution-graph.svg" width="90%" alt="PR Contribution Graph" />
-
-</div>
+  </div>
 
 ---
 
