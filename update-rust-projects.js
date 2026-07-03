@@ -105,7 +105,7 @@ function filterRelevantPRs(prs) {
  */
 function formatPRsForReadme(relevantPRs) {
   if (relevantPRs.length === 0) {
-    return '### Open Source Contributions\n- No Rust/Go-related PRs found yet.\n';
+    return '<!--CONTRIBUTIONS_START-->\n- No Rust/Go-related PRs found yet.\n<!--CONTRIBUTIONS_END-->';
   }
 
   const prItems = relevantPRs
@@ -116,7 +116,7 @@ function formatPRsForReadme(relevantPRs) {
     })
     .join('\n');
 
-  return `### Open Source Contributions\n${prItems}\n`;
+  return `<!--CONTRIBUTIONS_START-->\n${prItems}\n<!--CONTRIBUTIONS_END-->`;
 }
 
 /**
@@ -126,34 +126,34 @@ function formatPRsForReadme(relevantPRs) {
 function updateReadme(contributionsSection) {
   try {
     let readmeContent = fs.readFileSync(config.readmePath, 'utf8');
-    
-    // Define the section to replace
-    const sectionRegex = /(### Open Source Contributions\n)[\s\S]*?(\n## |$)/;
-    
+
+    // Use explicit markers for reliable section replacement
+    const sectionRegex = /<!--CONTRIBUTIONS_START-->[\s\S]*?<!--CONTRIBUTIONS_END-->/;
+
     if (sectionRegex.test(readmeContent)) {
-      // Replace existing section
+      // Replace content between markers
       readmeContent = readmeContent.replace(
-        sectionRegex, 
-        `$1${contributionsSection.replace('### Open Source Contributions\n', '')}$2`
+        sectionRegex,
+        contributionsSection
       );
+      console.log('README.md updated successfully with Rust & Go PR information!');
     } else {
-      // Add new section before "Other Featured Projects" or at the end of "Coding Activity"
-      // Looking for a good anchor point
+      // Fallback: insert after WakaTime section
       const anchorRegex = /(<!--END_SECTION:waka-->)/;
       if (anchorRegex.test(readmeContent)) {
         readmeContent = readmeContent.replace(
-            anchorRegex,
-            `$1\n\n${contributionsSection}`
+          anchorRegex,
+          `$1\n\n### Open Source Contributions\n${contributionsSection}`
         );
+        console.log('README.md updated (inserted after WakaTime section)!');
       } else {
-         // Fallback to appending if waka section not found (unlikely based on current readme)
-         console.error('Could not find a suitable location to insert the contributions section');
-         return;
+        console.error('Could not find a suitable location to insert the contributions section');
+        return;
       }
     }
-    
+
     fs.writeFileSync(config.readmePath, readmeContent, 'utf8');
-    console.log('README.md updated successfully with Rust & Go PR information!');
+    console.log('README.md saved successfully!');
   } catch (error) {
     console.error(`Failed to update README: ${error.message}`);
   }
