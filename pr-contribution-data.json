@@ -1,9 +1,4 @@
 {
-  "2025-07": {
-    "count": 0,
-    "repositories": {},
-    "prs": []
-  },
   "2025-08": {
     "count": 12,
     "repositories": {
@@ -666,6 +661,11 @@
     ]
   },
   "2026-06": {
+    "count": 0,
+    "repositories": {},
+    "prs": []
+  },
+  "2026-07": {
     "count": 0,
     "repositories": {},
     "prs": []
