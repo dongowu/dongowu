@@ -689,11 +689,19 @@
     "prs": []
   },
   "2026-07": {
-    "count": 1,
+    "count": 2,
     "repositories": {
+      "GoPolymarket/polymarket-go-sdk": 1,
       "lessweb/deepcode-cli": 1
     },
     "prs": [
+      {
+        "title": "fix(clob): restore json.Number salt for POLY_1271 order payloads",
+        "url": "https://github.com/GoPolymarket/polymarket-go-sdk/pull/64",
+        "repo": "GoPolymarket/polymarket-go-sdk",
+        "created_at": "2026-07-14T23:05:17Z",
+        "state": "closed"
+      },
       {
         "title": "feat(cli): add `deepcode login` command to save API key",
         "url": "https://github.com/lessweb/deepcode-cli/pull/225",
