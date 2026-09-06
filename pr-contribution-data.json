@@ -1,64 +1,4 @@
 {
-  "2025-09": {
-    "count": 7,
-    "repositories": {
-      "MystenLabs/sui": 3,
-      "volo-rs/volo-loadbalance": 2,
-      "hoh-zone/SuiMacMini": 1,
-      "cloudwego/volo": 1
-    },
-    "prs": [
-      {
-        "title": "Dynamic Concurrency Controller Implementation",
-        "url": "https://github.com/MystenLabs/sui/pull/23780",
-        "repo": "MystenLabs/sui",
-        "created_at": "2025-09-30T09:01:19Z",
-        "state": "closed"
-      },
-      {
-        "title": "Update security.yaml",
-        "url": "https://github.com/volo-rs/volo-loadbalance/pull/2",
-        "repo": "volo-rs/volo-loadbalance",
-        "created_at": "2025-09-29T14:39:04Z",
-        "state": "closed"
-      },
-      {
-        "title": "add 9月-12月 贡献列表",
-        "url": "https://github.com/hoh-zone/SuiMacMini/pull/29",
-        "repo": "hoh-zone/SuiMacMini",
-        "created_at": "2025-09-29T11:07:52Z",
-        "state": "closed"
-      },
-      {
-        "title": "Devloadbalance",
-        "url": "https://github.com/volo-rs/volo-loadbalance/pull/1",
-        "repo": "volo-rs/volo-loadbalance",
-        "created_at": "2025-09-28T14:07:05Z",
-        "state": "closed"
-      },
-      {
-        "title": "feat: Add Load Balancer Implementation and Example Code ",
-        "url": "https://github.com/cloudwego/volo/pull/624",
-        "repo": "cloudwego/volo",
-        "created_at": "2025-09-26T08:17:27Z",
-        "state": "closed"
-      },
-      {
-        "title": "refactor:rename SequenceNumber to version",
-        "url": "https://github.com/MystenLabs/sui/pull/23613",
-        "repo": "MystenLabs/sui",
-        "created_at": "2025-09-17T11:01:35Z",
-        "state": "closed"
-      },
-      {
-        "title": "chore: remove redundant words in comments and documentation",
-        "url": "https://github.com/MystenLabs/sui/pull/23612",
-        "repo": "MystenLabs/sui",
-        "created_at": "2025-09-17T09:07:22Z",
-        "state": "closed"
-      }
-    ]
-  },
   "2025-10": {
     "count": 4,
     "repositories": {
@@ -615,6 +555,11 @@
     ]
   },
   "2026-08": {
+    "count": 0,
+    "repositories": {},
+    "prs": []
+  },
+  "2026-09": {
     "count": 0,
     "repositories": {},
     "prs": []
