@@ -17,32 +17,40 @@
 
 <br />
 
-I build **agent execution infrastructure** — Go control planes, Rust runtime planes, and the unglamorous layers around them: scheduling, governance, auditability, observability.
+I build **agent execution infrastructure** — Go control planes, Rust runtime planes, and the Sui / Walrus layer that gives agents wallets, memory, and tamper-evident audit trails.
 
 Most agent projects stop at the demo. I care about what comes after: how an autonomous workload gets **bounded, audited, and explained** once it runs unattended.
 
-🔭 **Now** — deepening the AgentOS control plane · building the audit / replay layer · going deeper on Rust async internals
+🔭 **Now** — AgentOS audit / replay layer · agent-economy settlement on Sui · Rust async internals
 
 ---
 
 ## 🚀 Featured projects
 
 <details open>
-<summary><b>8 repositories, one theme: agents you can operate</b></summary>
+<summary><b>11 repositories, one theme: agents you can operate</b></summary>
 <br />
 
 | Project | Stack | What it does |
 | --- | --- | --- |
+| **Agent infrastructure** | | |
 | [**agentos**](https://github.com/dongowu/agentos) | `Go` `Rust` | Self-hosted agent execution platform — task orchestration & lifecycle, local / NATS dual scheduling, audit & replay APIs, SSE telemetry, agent loop with tool calling |
 | [**sentinel-protocol**](https://github.com/dongowu/sentinel-protocol) | `Go` `Move` | Verifiable pre-execution security for OpenClaw agents — policy gate + multi-signal risk engine → ALLOW / REQUIRE_APPROVAL / BLOCK, decisions anchored to Sui as tamper-evident evidence |
+| **On-chain agents · Sui** | | |
+| [**sui-nexus**](https://github.com/dongowu/sui-nexus) | `Go` `Move` | Settlement infrastructure for the AI agent economy on Sui — HMAC + zkLogin auth, Move-enforced wallet policy (not middleware), Walrus-backed memory, PTB atomic execution. Sui Overflow 2026, live on testnet |
+| [**memwal**](https://github.com/dongowu/memwal) · [PyPI](https://pypi.org/project/memwal/) | `Python` `Move` | One import gives any AI agent persistent, cross-session, verifiable memory — Walrus storage + Sui on-chain references, framework-agnostic (`pip install memwal`) |
+| [**FactionForge**](https://github.com/dongowu/FactionForge) | `Move` `React` | Programmable smart infrastructure for EVE Frontier on Sui — reputation-aware storage, faction-aware gates, frontend binding to real assembly IDs. Live on testnet |
+| **Developer tooling** | | |
 | [**git-ai-cli**](https://github.com/dongowu/git-ai-cli) · [npm](https://www.npmjs.com/package/@dongowu/git-ai-cli) | `Rust` | Branch-aware AI Git assistant — commit generation, Copilot guard, weekly digests. DeepSeek / Qwen / GLM / Moonshot / Ollama, fully local-first |
 | [**ai-tracker**](https://github.com/dongowu/ai-tracker) | `Rust` | Observability for AI coding agents — sessions, streaks and tool / model usage across Claude Code, Codex, Cursor |
+| **Multi-agent applications** | | |
 | [**SpecAssetPages**](https://github.com/dongowu/SpecAssetPages) | `Go` `React` | Pledgekit — multi-agent generator: one product spec → 7 crowdfunding assets (copy, renders, reward tiers). DeepSeek for text, FLUX 1.1 Pro for images |
 | [**alpha-research-agent**](https://github.com/dongowu/alpha-research-agent) | `Go` | Crypto research agent — aggregates market, on-chain and DEX data into briefing / deep-dive / long-form outputs |
+| **Engineering productivity** | | |
 | [**EcoPilot**](https://github.com/dongowu/EcoPilot) | `Python` | Sustainable CI/CD agent for GitLab Duo — finds CI waste, quantifies time / cost / carbon savings, opens MRs with deterministic fixes |
 | [**release-pilot**](https://github.com/dongowu/release-pilot) | `Go` `TypeScript` | GitHub Release notification bot — subscribe to repos, filter by rules, render templates, push to channels |
 
-<sub>The rest live in the [full repository list](https://github.com/dongowu?tab=repositories).</sub>
+<sub>Also keeping [**MyNote**](https://github.com/dongowu/MyNote) — an Obsidian knowledge base of agent-development notes and engineering standards. The rest live in the [full repository list](https://github.com/dongowu?tab=repositories).</sub>
 
 </details>
 
@@ -161,10 +169,12 @@ Every action an agent takes passes a policy gate **before** it runs — and ever
 <summary><b>🀄 中文简介</b></summary>
 <br />
 
-我是 **dongowu**，专注 **Agent 执行基础设施**：用 Go 做控制面、Rust 做运行时面，关心调度、治理、可审计、可观测这些"演示之后"的工程问题——让一个自主运行的工作负载可以被**约束、审计和解释**。
+我是 **dongowu**，专注 **Agent 执行基础设施**：用 Go 做控制面、Rust 做运行时面，并用 Sui / Walrus 给 agent 提供钱包、记忆与不可篡改的审计锚点——关心调度、治理、可审计、可观测这些"演示之后"的工程问题，让一个自主运行的工作负载可以被**约束、审计和解释**。
 
 - **[AgentOS](https://github.com/dongowu/agentos)**：自托管 Agent 执行平台 — 任务编排与执行生命周期、本地 / NATS 双调度路径、审计与回放 API、SSE 遥测、agent loop 与工具调用
 - **[Sentinel Protocol](https://github.com/dongowu/sentinel-protocol)**：面向 OpenClaw + Sui 的可验证执行前安全层 — 策略门 + 多信号风险引擎给出 ALLOW / 需审批 / 拦截，决策经哈希链与 Merkle 批次锚定上链，形成不可篡改的审计证据
+- **[sui-nexus](https://github.com/dongowu/sui-nexus)**：Sui 上 AI agent 经济的结算基础设施 — HMAC + zkLogin 认证、Move 层强制的钱包策略、Walrus 记忆、PTB 原子执行，已部署 testnet（Sui Overflow 2026）
+- **[memwal](https://github.com/dongowu/memwal)**（[PyPI](https://pypi.org/project/memwal/)）：一行导入即给任意 AI agent 持久、跨会话、可验证的记忆 — Walrus 存储 + Sui 链上引用，框架无关
 - **[git-ai-cli](https://github.com/dongowu/git-ai-cli)**（[npm](https://www.npmjs.com/package/@dongowu/git-ai-cli)）：分支感知的 AI Git 助手，支持 DeepSeek / 通义千问 / 智谱 GLM / Moonshot / Ollama，可完全本地部署，代码不出内网
 - **[EcoPilot](https://github.com/dongowu/EcoPilot)**：面向可持续 CI/CD 的 GitLab Duo 智能体流程，量化时长、成本与碳排收益，并直接开出确定性修复的合并请求
 
