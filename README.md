@@ -21,7 +21,7 @@ I build **agent systems in Go & Rust** — production AIGC pipelines, open-sourc
 
 Most agent projects stop at the demo. I care about what comes after: how an autonomous workload gets **bounded, audited, and explained** once it runs unattended.
 
-🔭 **Now** — aigc-server agent pipeline (V1.0) · AgentOS audit / replay · Rust async internals
+🔭 **Now** — shipping the aigc-server agent pipeline (V1.0) · AgentOS audit / replay layer · Rust async internals
 
 ---
 
@@ -34,7 +34,7 @@ Most agent projects stop at the demo. I care about what comes after: how an auto
 | Project | Stack | What it does |
 | --- | --- | --- |
 | **Production · agent systems** | | |
-| **aigc-server** <sub>production · private</sub> | `Go` `Eino` | AIGC video platform for a social app — multi-agent, director-mode generation pipeline: Concept → SkillWorkflow → PlanAgent stages chained by a session orchestrator, plan compiler with state machine + checkpoints, pluggable video providers (ComfyUI / Bailian / Vidu / RunningHub), idempotent execution, TRTC / IM / COS integration, points & IAP payments |
+| **aigc-server** <sub>production · private</sub> | `Go` `Eino` | AIGC video platform for a social app — controlled-autonomy generation pipeline: **the LLM proposes, the backend decides** (full walkthrough below) |
 | **Open source · agent infrastructure** | | |
 | [**agentos**](https://github.com/dongowu/agentos) | `Go` `Rust` | Self-hosted agent execution platform — task orchestration & lifecycle, local / NATS dual scheduling, audit & replay APIs, SSE telemetry, agent loop with tool calling |
 | [**sentinel-protocol**](https://github.com/dongowu/sentinel-protocol) | `Go` `Move` | Verifiable pre-execution security for OpenClaw agents — policy gate + multi-signal risk engine → ALLOW / REQUIRE_APPROVAL / BLOCK, decisions anchored to Sui as tamper-evident evidence |
@@ -48,6 +48,32 @@ Most agent projects stop at the demo. I care about what comes after: how an auto
 | **release-pilot** <sub>private</sub> | `Go` `TypeScript` | GitHub Release notification bot — subscribe to repos, filter by rules, render templates, push to channels |
 
 <sub>Also: [**EcoPilot**](https://github.com/dongowu/EcoPilot) `Python` — sustainable CI/CD agent for GitLab Duo · **MyNote** — agent-development knowledge base (private) · the rest in the [full repository list](https://github.com/dongowu?tab=repositories).</sub>
+
+</details>
+
+---
+
+## 🏭 Production system
+
+<details open>
+<summary><b>aigc-server — agent-driven AIGC video platform (code private)</b></summary>
+<br />
+
+A social app's AIGC video platform, built on one principle: **the LLM proposes, the backend decides.** The model only ever emits a structured decision contract — every side effect (spending credits, submitting a generation, cancelling, redoing) passes backend validation, a confirmation gate, and a deterministic execution chain.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/dongowu/dongowu@main/profile/aigc-pipeline-dark.svg" />
+    <img src="https://cdn.jsdelivr.net/gh/dongowu/dongowu@main/profile/aigc-pipeline.svg" width="92%" alt="aigc-server controlled autonomous creation pipeline" />
+  </picture>
+</p>
+
+What makes it hold up in production:
+
+- **Idempotent end to end** — SHA-256 request-hash dedup at the command queue, per-tool audit replay inside the runtime loop, and `agent-{session}-rev{r}-step{n}` request IDs so a director-mode re-run resumes per shot instead of paying twice.
+- **Multi-shot by default** — any video plan with more than one shot is promoted to director mode at compile time, server-side; every video plan always has a shot layer, credits accumulate per shot, and a partial failure returns to the confirmation gate for resumable continuation.
+- **Bounded autonomy** — ≤4 LLM calls and ≤8 tool calls per turn under a hard deadline; read-only tools run automatically while side-effect tools require approval; the terminal-decision validator gets exactly one repair round.
+- **Pluggable providers** — ComfyUI / Bailian / Vidu / RunningHub behind one abstraction: submission consumes credits, failure refunds, and swapping a provider never touches the core.
 
 </details>
 
@@ -168,7 +194,7 @@ Every action an agent takes passes a policy gate **before** it runs — and ever
 
 我是 **dongowu**，用 **Go / Rust 做 Agent 系统**：生产环境的 AIGC 业务 pipeline、开源的 Agent 执行基础设施，以及用 Sui / Walrus 给 agent 加钱包、记忆与不可篡改审计锚点——关心调度、治理、可审计、可观测这些"演示之后"的工程问题，让一个自主运行的工作负载可以被**约束、审计和解释**。
 
-- **aigc-server · Agent 子系统**（生产项目，代码私有）：社交 App 的 AIGC 视频平台 — director-mode 多镜头生成 pipeline（Concept → SkillWorkflow → PlanAgent 由会话编排器串联）、PlanCompiler 状态机 + checkpoint 断点续跑、可插拔视频 Provider（ComfyUI / 阿里百炼 / Vidu / RunningHub）、幂等执行、TRTC / IM / COS 集成、积分与 IAP 支付
+- **aigc-server · Agent 子系统**（生产项目，代码私有，架构图见上方 Production system）：社交 App 的 AIGC 视频平台，一条受控自主创作 pipeline — **模型只出结构化 Decision，所有副作用都过后端校验、确认门与确定性执行链**；PlanCompiler 服务端编译多镜方案并自动提升 director 模式，幂等键到镜级、断点续跑不重复扣费，可插拔视频 Provider（ComfyUI / 阿里百炼 / Vidu / RunningHub）
 - **[AgentOS](https://github.com/dongowu/agentos)**：自托管 Agent 执行平台 — 任务编排与执行生命周期、本地 / NATS 双调度路径、审计与回放 API、SSE 遥测、agent loop 与工具调用
 - **[Sentinel Protocol](https://github.com/dongowu/sentinel-protocol)**：面向 OpenClaw + Sui 的可验证执行前安全层 — 策略门 + 多信号风险引擎给出 ALLOW / 需审批 / 拦截，决策经哈希链与 Merkle 批次锚定上链，形成不可篡改的审计证据
 - **[sui-nexus](https://github.com/dongowu/sui-nexus)**：Sui 上 AI agent 经济的结算基础设施 — HMAC + zkLogin 认证、Move 层强制的钱包策略、Walrus 记忆、PTB 原子执行，已部署 testnet（Sui Overflow 2026）
