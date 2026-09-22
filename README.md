@@ -17,40 +17,37 @@
 
 <br />
 
-I build **agent execution infrastructure** — Go control planes, Rust runtime planes, and the Sui / Walrus layer that gives agents wallets, memory, and tamper-evident audit trails.
+I build **agent systems in Go & Rust** — production AIGC pipelines, open-source execution infrastructure, and the Sui / Walrus layer that gives agents wallets, memory, and tamper-evident audit trails.
 
 Most agent projects stop at the demo. I care about what comes after: how an autonomous workload gets **bounded, audited, and explained** once it runs unattended.
 
-🔭 **Now** — AgentOS audit / replay layer · agent-economy settlement on Sui · Rust async internals
+🔭 **Now** — aigc-server agent pipeline (V1.0) · AgentOS audit / replay · Rust async internals
 
 ---
 
-## 🚀 Featured projects
+## 🚀 Featured work
 
 <details open>
-<summary><b>11 repositories, one theme: agents you can operate</b></summary>
+<summary><b>Go & Rust backends, agent systems you can operate</b></summary>
 <br />
 
 | Project | Stack | What it does |
 | --- | --- | --- |
-| **Agent infrastructure** | | |
+| **Production · agent systems** | | |
+| **aigc-server** <sub>production · private</sub> | `Go` `Eino` | AIGC video platform for a social app — multi-agent, director-mode generation pipeline: Concept → SkillWorkflow → PlanAgent stages chained by a session orchestrator, plan compiler with state machine + checkpoints, pluggable video providers (ComfyUI / Bailian / Vidu / RunningHub), idempotent execution, TRTC / IM / COS integration, points & IAP payments |
+| **Open source · agent infrastructure** | | |
 | [**agentos**](https://github.com/dongowu/agentos) | `Go` `Rust` | Self-hosted agent execution platform — task orchestration & lifecycle, local / NATS dual scheduling, audit & replay APIs, SSE telemetry, agent loop with tool calling |
 | [**sentinel-protocol**](https://github.com/dongowu/sentinel-protocol) | `Go` `Move` | Verifiable pre-execution security for OpenClaw agents — policy gate + multi-signal risk engine → ALLOW / REQUIRE_APPROVAL / BLOCK, decisions anchored to Sui as tamper-evident evidence |
-| **On-chain agents · Sui** | | |
+| **Open source · on-chain agents** | | |
 | [**sui-nexus**](https://github.com/dongowu/sui-nexus) | `Go` `Move` | Settlement infrastructure for the AI agent economy on Sui — HMAC + zkLogin auth, Move-enforced wallet policy (not middleware), Walrus-backed memory, PTB atomic execution. Sui Overflow 2026, live on testnet |
 | [**memwal**](https://github.com/dongowu/memwal) · [PyPI](https://pypi.org/project/memwal/) | `Python` `Move` | One import gives any AI agent persistent, cross-session, verifiable memory — Walrus storage + Sui on-chain references, framework-agnostic (`pip install memwal`) |
-| [**FactionForge**](https://github.com/dongowu/FactionForge) | `Move` `React` | Programmable smart infrastructure for EVE Frontier on Sui — reputation-aware storage, faction-aware gates, frontend binding to real assembly IDs. Live on testnet |
-| **Developer tooling** | | |
+| **Go / Rust tooling** | | |
 | [**git-ai-cli**](https://github.com/dongowu/git-ai-cli) · [npm](https://www.npmjs.com/package/@dongowu/git-ai-cli) | `Rust` | Branch-aware AI Git assistant — commit generation, Copilot guard, weekly digests. DeepSeek / Qwen / GLM / Moonshot / Ollama, fully local-first |
-| [**ai-tracker**](https://github.com/dongowu/ai-tracker) | `Rust` | Observability for AI coding agents — sessions, streaks and tool / model usage across Claude Code, Codex, Cursor |
-| **Multi-agent applications** | | |
-| [**SpecAssetPages**](https://github.com/dongowu/SpecAssetPages) | `Go` `React` | Pledgekit — multi-agent generator: one product spec → 7 crowdfunding assets (copy, renders, reward tiers). DeepSeek for text, FLUX 1.1 Pro for images |
-| [**alpha-research-agent**](https://github.com/dongowu/alpha-research-agent) | `Go` | Crypto research agent — aggregates market, on-chain and DEX data into briefing / deep-dive / long-form outputs |
-| **Engineering productivity** | | |
-| [**EcoPilot**](https://github.com/dongowu/EcoPilot) | `Python` | Sustainable CI/CD agent for GitLab Duo — finds CI waste, quantifies time / cost / carbon savings, opens MRs with deterministic fixes |
-| [**release-pilot**](https://github.com/dongowu/release-pilot) | `Go` `TypeScript` | GitHub Release notification bot — subscribe to repos, filter by rules, render templates, push to channels |
+| **ai-tracker** <sub>private</sub> | `Rust` | Observability for AI coding agents — sessions, streaks and tool / model usage across Claude Code, Codex, Cursor |
+| **alpha-research-agent** <sub>private</sub> | `Go` | Crypto research agent — aggregates market, on-chain and DEX data into briefing / deep-dive / long-form outputs |
+| **release-pilot** <sub>private</sub> | `Go` `TypeScript` | GitHub Release notification bot — subscribe to repos, filter by rules, render templates, push to channels |
 
-<sub>Also keeping [**MyNote**](https://github.com/dongowu/MyNote) — an Obsidian knowledge base of agent-development notes and engineering standards. The rest live in the [full repository list](https://github.com/dongowu?tab=repositories).</sub>
+<sub>Also: [**EcoPilot**](https://github.com/dongowu/EcoPilot) `Python` — sustainable CI/CD agent for GitLab Duo · **MyNote** — agent-development knowledge base (private) · the rest in the [full repository list](https://github.com/dongowu?tab=repositories).</sub>
 
 </details>
 
@@ -169,16 +166,16 @@ Every action an agent takes passes a policy gate **before** it runs — and ever
 <summary><b>🀄 中文简介</b></summary>
 <br />
 
-我是 **dongowu**，专注 **Agent 执行基础设施**：用 Go 做控制面、Rust 做运行时面，并用 Sui / Walrus 给 agent 提供钱包、记忆与不可篡改的审计锚点——关心调度、治理、可审计、可观测这些"演示之后"的工程问题，让一个自主运行的工作负载可以被**约束、审计和解释**。
+我是 **dongowu**，用 **Go / Rust 做 Agent 系统**：生产环境的 AIGC 业务 pipeline、开源的 Agent 执行基础设施，以及用 Sui / Walrus 给 agent 加钱包、记忆与不可篡改审计锚点——关心调度、治理、可审计、可观测这些"演示之后"的工程问题，让一个自主运行的工作负载可以被**约束、审计和解释**。
 
+- **aigc-server · Agent 子系统**（生产项目，代码私有）：社交 App 的 AIGC 视频平台 — director-mode 多镜头生成 pipeline（Concept → SkillWorkflow → PlanAgent 由会话编排器串联）、PlanCompiler 状态机 + checkpoint 断点续跑、可插拔视频 Provider（ComfyUI / 阿里百炼 / Vidu / RunningHub）、幂等执行、TRTC / IM / COS 集成、积分与 IAP 支付
 - **[AgentOS](https://github.com/dongowu/agentos)**：自托管 Agent 执行平台 — 任务编排与执行生命周期、本地 / NATS 双调度路径、审计与回放 API、SSE 遥测、agent loop 与工具调用
 - **[Sentinel Protocol](https://github.com/dongowu/sentinel-protocol)**：面向 OpenClaw + Sui 的可验证执行前安全层 — 策略门 + 多信号风险引擎给出 ALLOW / 需审批 / 拦截，决策经哈希链与 Merkle 批次锚定上链，形成不可篡改的审计证据
 - **[sui-nexus](https://github.com/dongowu/sui-nexus)**：Sui 上 AI agent 经济的结算基础设施 — HMAC + zkLogin 认证、Move 层强制的钱包策略、Walrus 记忆、PTB 原子执行，已部署 testnet（Sui Overflow 2026）
 - **[memwal](https://github.com/dongowu/memwal)**（[PyPI](https://pypi.org/project/memwal/)）：一行导入即给任意 AI agent 持久、跨会话、可验证的记忆 — Walrus 存储 + Sui 链上引用，框架无关
 - **[git-ai-cli](https://github.com/dongowu/git-ai-cli)**（[npm](https://www.npmjs.com/package/@dongowu/git-ai-cli)）：分支感知的 AI Git 助手，支持 DeepSeek / 通义千问 / 智谱 GLM / Moonshot / Ollama，可完全本地部署，代码不出内网
-- **[EcoPilot](https://github.com/dongowu/EcoPilot)**：面向可持续 CI/CD 的 GitLab Duo 智能体流程，量化时长、成本与碳排收益，并直接开出确定性修复的合并请求
 
-其余项目见上方 Featured projects。
+其余项目见上方 Featured work。
 
 </details>
 
