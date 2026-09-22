@@ -8,6 +8,11 @@ on:
 permissions:
   contents: write
 
+# See readme-cards.yml: the same group keeps the committing workflows from
+# racing each other, and the rebase absorbs pushes from the others.
+concurrency:
+  group: profile-assets
+
 jobs:
   snake:
     runs-on: ubuntu-latest
@@ -29,4 +34,5 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add dist/*.svg
           git diff --staged --quiet || git commit -m 'Update snake animation'
+          git pull --rebase --autostash origin main
           git push

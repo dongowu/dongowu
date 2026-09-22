@@ -13,6 +13,12 @@ on:
 permissions:
   contents: write
 
+# Several workflows in this repository commit back to main. Serialising this
+# one and rebasing before the push keeps a scheduled run from being rejected
+# by whatever else happened to push first.
+concurrency:
+  group: profile-assets
+
 jobs:
   cards:
     runs-on: ubuntu-latest
@@ -65,4 +71,5 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add profile/*.svg
           git diff --staged --quiet || git commit -m 'Update profile cards'
+          git pull --rebase --autostash origin main
           git push
