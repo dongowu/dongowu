@@ -26,8 +26,8 @@
     <tr>
       <td align="center" width="50%">
         <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dongowu/dongowu/main/profile/stats-dark.svg" />
-          <img src="https://raw.githubusercontent.com/dongowu/dongowu/main/profile/stats.svg" width="100%" alt="GitHub Stats" />
+          <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/dongowu/dongowu@main/profile/stats-dark.svg" />
+          <img src="https://cdn.jsdelivr.net/gh/dongowu/dongowu@main/profile/stats.svg" width="100%" alt="GitHub Stats" />
         </picture>
       </td>
       <td align="center" width="50%">
@@ -40,8 +40,8 @@
     <tr>
       <td align="center" colspan="2">
         <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dongowu/dongowu/main/profile/top-langs-dark.svg" />
-          <img src="https://raw.githubusercontent.com/dongowu/dongowu/main/profile/top-langs.svg" width="62%" alt="Top Languages" />
+          <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/dongowu/dongowu@main/profile/top-langs-dark.svg" />
+          <img src="https://cdn.jsdelivr.net/gh/dongowu/dongowu@main/profile/top-langs.svg" width="62%" alt="Top Languages" />
         </picture>
       </td>
     </tr>
@@ -122,15 +122,15 @@ Most agent projects stop at the demo. I care about what comes after: how an auto
 
 <div align="center">
 
-  <img src="https://raw.githubusercontent.com/dongowu/dongowu/main/pr-contribution-graph.svg" width="95%" alt="Pull Request Activity" />
+  <img src="https://cdn.jsdelivr.net/gh/dongowu/dongowu@main/pr-contribution-graph.svg" width="95%" alt="Pull Request Activity" />
 
   <br/>
   <br/>
 
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dongowu/dongowu/main/dist/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dongowu/dongowu/main/dist/github-contribution-grid-snake.svg" />
-    <img src="https://raw.githubusercontent.com/dongowu/dongowu/main/dist/github-contribution-grid-snake.svg" width="90%" alt="Contribution Snake" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/dongowu/dongowu@main/dist/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/dongowu/dongowu@main/dist/github-contribution-grid-snake.svg" />
+    <img src="https://cdn.jsdelivr.net/gh/dongowu/dongowu@main/dist/github-contribution-grid-snake.svg" width="90%" alt="Contribution Snake" />
   </picture>
 
 </div>
