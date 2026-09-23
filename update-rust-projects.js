@@ -122,40 +122,33 @@ function formatPRsForReadme(relevantPRs) {
 /**
  * Updates the README.md file with PR information
  * @param {string} contributionsSection - Formatted markdown content
+ * @returns {boolean} - Whether the README was updated
  */
 function updateReadme(contributionsSection) {
   try {
     let readmeContent = fs.readFileSync(config.readmePath, 'utf8');
 
-    // Use explicit markers for reliable section replacement
+    // The explicit markers are the only supported insertion point. Refuse to
+    // guess a fallback position: a silent no-op looks identical to a healthy
+    // run, so a missing anchor must fail the job instead.
     const sectionRegex = /<!--CONTRIBUTIONS_START-->[\s\S]*?<!--CONTRIBUTIONS_END-->/;
 
-    if (sectionRegex.test(readmeContent)) {
-      // Replace content between markers
-      readmeContent = readmeContent.replace(
-        sectionRegex,
-        contributionsSection
+    if (!sectionRegex.test(readmeContent)) {
+      console.error(
+        'Missing README markers <!--CONTRIBUTIONS_START--> / <!--CONTRIBUTIONS_END-->; refusing to guess an insertion point.'
       );
-      console.log('README.md updated successfully with Rust & Go PR information!');
-    } else {
-      // Fallback: insert after WakaTime section
-      const anchorRegex = /(<!--END_SECTION:waka-->)/;
-      if (anchorRegex.test(readmeContent)) {
-        readmeContent = readmeContent.replace(
-          anchorRegex,
-          `$1\n\n### Open Source Contributions\n${contributionsSection}`
-        );
-        console.log('README.md updated (inserted after WakaTime section)!');
-      } else {
-        console.error('Could not find a suitable location to insert the contributions section');
-        return;
-      }
+      return false;
     }
 
+    // Replace content between markers
+    readmeContent = readmeContent.replace(sectionRegex, contributionsSection);
+
     fs.writeFileSync(config.readmePath, readmeContent, 'utf8');
-    console.log('README.md saved successfully!');
+    console.log('README.md updated successfully with Rust & Go PR information!');
+    return true;
   } catch (error) {
     console.error(`Failed to update README: ${error.message}`);
+    return false;
   }
 }
 
@@ -172,7 +165,9 @@ async function main() {
     console.log(`Found ${relevantPRs.length} Rust/Go-related PRs`);
     
     const contributionsSection = formatPRsForReadme(relevantPRs);
-    updateReadme(contributionsSection);
+    if (!updateReadme(contributionsSection)) {
+      process.exit(1);
+    }
   } catch (error) {
     console.error(`Error: ${error.message}`);
     process.exit(1);
