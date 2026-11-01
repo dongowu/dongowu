@@ -176,15 +176,11 @@
       <div class="month-selector">
         <label for="month-select">Select Month: </label>
         <select id="month-select">
-          <option value="2025-11">Nov 2025 (0 PRs)</option><option value="2025-12">Dec 2025 (6 PRs)</option><option value="2026-01">Jan 2026 (14 PRs)</option><option value="2026-02">Feb 2026 (29 PRs)</option><option value="2026-03">Mar 2026 (9 PRs)</option><option value="2026-04">Apr 2026 (1 PRs)</option><option value="2026-05">May 2026 (1 PRs)</option><option value="2026-06">Jun 2026 (0 PRs)</option><option value="2026-07">Jul 2026 (2 PRs)</option><option value="2026-08">Aug 2026 (0 PRs)</option><option value="2026-09">Sep 2026 (0 PRs)</option><option value="2026-10">Oct 2026 (0 PRs)</option>
+          <option value="2025-12">Dec 2025 (6 PRs)</option><option value="2026-01">Jan 2026 (14 PRs)</option><option value="2026-02">Feb 2026 (29 PRs)</option><option value="2026-03">Mar 2026 (9 PRs)</option><option value="2026-04">Apr 2026 (1 PRs)</option><option value="2026-05">May 2026 (1 PRs)</option><option value="2026-06">Jun 2026 (0 PRs)</option><option value="2026-07">Jul 2026 (2 PRs)</option><option value="2026-08">Aug 2026 (0 PRs)</option><option value="2026-09">Sep 2026 (0 PRs)</option><option value="2026-10">Oct 2026 (0 PRs)</option><option value="2026-11">Nov 2026 (0 PRs)</option>
         </select>
       </div>
       
       
-          <div id="pr-list-2025-11" class="month-prs" style="display: none;">
-            <p>No PRs in this month</p>
-          </div>
-        
           <div id="pr-list-2025-12" class="month-prs" style="display: none;">
             
                   <div class="pr-item">
@@ -911,10 +907,14 @@
             <p>No PRs in this month</p>
           </div>
         
+          <div id="pr-list-2026-11" class="month-prs" style="display: none;">
+            <p>No PRs in this month</p>
+          </div>
+        
     </div>
     
     <div class="footer">
-      Generated on 10/25/2026 | Data from GitHub API
+      Generated on 11/1/2026 | Data from GitHub API
     </div>
   </div>
   
@@ -924,42 +924,42 @@
     const prChart = new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ["Nov 2025","Dec 2025","Jan 2026","Feb 2026","Mar 2026","Apr 2026","May 2026","Jun 2026","Jul 2026","Aug 2026","Sep 2026","Oct 2026"],
+        labels: ["Dec 2025","Jan 2026","Feb 2026","Mar 2026","Apr 2026","May 2026","Jun 2026","Jul 2026","Aug 2026","Sep 2026","Oct 2026","Nov 2026"],
         datasets: [
           {
             label: 'Total PRs',
-            data: [0,6,14,29,9,1,1,0,2,0,0,0],
+            data: [6,14,29,9,1,1,0,2,0,0,0,0],
             backgroundColor: 'rgba(130, 80, 223, 0.7)',
             borderColor: 'rgba(130, 80, 223, 1)',
             borderWidth: 1
           },
           {
               label: 'dongowu/agentos',
-              data: [0,0,0,19,2,0,0,0,0,0,0,0],
+              data: [0,0,19,2,0,0,0,0,0,0,0,0],
               backgroundColor: 'rgba(255, 99, 132, 0.5)',
               borderColor: 'rgba(255, 99, 132, 1)',
               borderWidth: 1
             },{
               label: 'MystenLabs/sui',
-              data: [0,4,4,2,3,0,0,0,0,0,0,0],
+              data: [4,4,2,3,0,0,0,0,0,0,0,0],
               backgroundColor: 'rgba(54, 162, 235, 0.5)',
               borderColor: 'rgba(54, 162, 235, 1)',
               borderWidth: 1
             },{
               label: 'GoPolymarket/polymarket-go-sdk',
-              data: [0,0,6,3,2,1,0,0,1,0,0,0],
+              data: [0,6,3,2,1,0,0,1,0,0,0,0],
               backgroundColor: 'rgba(255, 206, 86, 0.5)',
               borderColor: 'rgba(255, 206, 86, 1)',
               borderWidth: 1
             },{
               label: 'zeroclaw-labs/zeroclaw',
-              data: [0,0,0,1,2,0,0,0,0,0,0,0],
+              data: [0,0,1,2,0,0,0,0,0,0,0,0],
               backgroundColor: 'rgba(75, 192, 192, 0.5)',
               borderColor: 'rgba(75, 192, 192, 1)',
               borderWidth: 1
             },{
               label: 'GoPolymarket/go-builder-relayer-client',
-              data: [0,0,2,0,0,0,0,0,0,0,0,0],
+              data: [0,2,0,0,0,0,0,0,0,0,0,0],
               backgroundColor: 'rgba(153, 102, 255, 0.5)',
               borderColor: 'rgba(153, 102, 255, 1)',
               borderWidth: 1
